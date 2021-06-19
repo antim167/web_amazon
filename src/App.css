@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+header{
+  
+  border: 0 dashed red;
+  background: hsl(214, 27%, 10%);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.a_header_top{
+  height:75px ;
+  border: 1px dashed red;
+  background: hsl(214, 27%, 10%);
+  z-index: 10000;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .a_header_top > button:hover{
+    border: 1px solid #fff;
   }
+  
+  .a_header_bottom{
+  height:49px ;
+  border: 1px dashed rgb(34, 53, 34);
+  background: #203040;
+}
+.a_header_bottom a{
+  /*trbl*/
+  padding:5px 10px 5px 10px !important;
+  margin-top: 3px;
+  font-size: 15px;
+  color: #fff;
+  
+}
+.a_header_bottom a:hover{
+  outline: 1px solid #fff;
+  color: #fff;
+}
+.a_header_bottom a:active,.a_header_bottom a:focus{
+  color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
+.a_main{
+  height: 6835px;
+  border: 0 dashed blue;
+  background:#5ad3d3 ;
 }
+.a_main_top{
+  height: 600px;
+  border: 1PX dashed black;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.a_main_bot{
+  height: 6525px;
+  border: 1PX dashed black;
+  background: brown;
+  top :436px !important;
+
+  
+}
+footer{
+  height:605px;
+  border: 0 dashed green;
+  background: #131a22;
+  bottom: 6835px;
 }
