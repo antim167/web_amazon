@@ -1,10 +1,11 @@
 //import logo from './logo.svg';
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMapMarkerAlt, faBars } from '@fortawesome/free-solid-svg-icons';
+import { faMapMarkerAlt, faBars, faUser, faChevronRight, faCartPlus, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import Flag from 'react-world-flags';
 
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 /**
 * @author
@@ -15,7 +16,7 @@ class App extends Component {
   //1.property
   state = {
     x: '',
-    y:''
+    y: ' l934'
   }
   //2.constructor
   constructor(props) {
@@ -28,9 +29,15 @@ class App extends Component {
     if (window.scrollY > 90) {
       this.setState({ x: 'position-fixed start-0 end-0' })
     } else {
-      this.setState({ x: '' })
+      this.setState({ x: ' ' })
 
     }
+  }
+  closemodal = () => {
+    this.setState({ y: ' 1934 ' })
+  }
+  handlemodal = () => {
+    this.setState({ y: ' l334' })
   }
   componentDidMount() {
     //this method will be called when page/componet is render
@@ -40,46 +47,200 @@ class App extends Component {
     return (
 
       <div className="App ">
-        <div className="modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div className={'modal-dialog modal-dialog-scrollable '}>
+        <div className="modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div className={' h-100 modal-dialog modal-dialog-scrollable handalmodal ' + this.state.y}>
             <div className="modal-content">
-              <div className="modal-header">
-                <h5 className="modal-title" id="staticBackdropLabel">Modal title</h5>
-                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div className="modal-header mhcolor text-white">
+                <h5 className="modal-title" id="staticBackdropLabel"><FontAwesomeIcon icon={faUser} /> Hello, Sign in</h5>
+                <button onClick={this.closemodal} type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <div className="modal-body">
-                <p>This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the prefedined max-height of modal, content will be cropped and scrollable within the modal.</p>
-                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-                <p>This content should appear at the bottom after you scroll.</p>
+              <div className="modal-body border-bottom">
+                <h5 className="fw-bolder ps-4">Trending</h5>
+                <ul className="nav flex-column mhul border-bottom pt-1 mb-2">
+                  <li className="nav-item">
+                    <a className="nav-link active" href="#">Best Seller</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">New Releases</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Mover &amp; Shaker</a>
+                  </li>
+
+                </ul>
+                <h5 className="fw-bolder ps-4">Digital Content &amp; Devices</h5>
+                <ul className="nav flex-column border-bottom pt-1 mb-2 mhul">
+                  <li className="nav-item">
+                    <a className="nav-link active" href="#">Echo &amp; Alexa<FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Fire Tv <FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Kindle E-Readers &amp; eBook <FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Audible Audiobooks <FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Amazon Prime Video<FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Amazon Prime Music<FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+                  </li>
+                </ul>
+                <h5 className="fw-bolder ps-4">Shop By Department</h5>
+                <ul className="nav flex-column border-bottom pt-1 mb-2 mhul">
+                  <li className="nav-item">
+                    <a className="nav-link active" href="#">Mobiles Computer<FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Men's Fashion<FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Women Fashion<FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">See All<FontAwesomeIcon className="ms-1" icon={faChevronDown} /></a>
+                  </li>
+
+                </ul>
+                <h5 className="fw-bolder ps-4">Program &amp; Feature</h5>
+                <ul className="nav flex-column border-bottom pt-1 mb-2 mhul">
+                  <li className="nav-item">
+                    <a className="nav-link active" href="#">Gift Cards &amp; Mobile Recharge<FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Flight Tickets</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">FoundOnAmazon</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Full Store Directory</a>
+                  </li>
+                </ul>
+                <h5 className="fw-bolder ps-4">Help &amp; Setting</h5>
+                <ul className="nav flex-column border-bottom pt-1 mb-2 mhul">
+                  <li className="nav-item">
+                    <a className="nav-link active" href="#">Your Account</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Customer Services</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Sing In</a>
+                  </li>
+                </ul>
               </div>
               <div className="modal-footer">
-                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" className="btn btn-primary">Understood</button>
+
               </div>
             </div>
           </div>
         </div>
+        <div className="modal a_ht_singin_modal" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdrop1Label" aria-hidden="true">
+          <div className="modal-dialog">
+            <div className="modal-content">
+              <div className="modal-header a_singin_modal text-center">
+                <button type="button" className="btn btn-warning w-50">Sign in</button>
+               
+                <p>New customer? <a href="#" className="btn btn-link">Start here.</a></p>
+              </div>
+              <div className="modal-body ">
+                <div className="row">
+                  <div className="col-6 ">
+                  <h5 className="fw-bold"> Your Lists</h5>
+                    <ul className="nav flex-column">
+                      <li className="nav-item">
+                        <a className="nav-link active" href="#">Create a Wash List</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">Find a Wash List</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">Wash from Any Website</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link " href="#" >Baby Wish List</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link " href="#" >Discover your Style</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link " href="#" >Explore Showroom</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="col-6 ">
+                    <h5 className="fw-bold"> Your Account</h5>
+                    <ul className="nav flex-column">
+                      <li className="nav-item">
+                        <a className="nav-link active" href="#">Your Account</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">Your Order</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">your Wish List</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link " href="#" >your Recommendation</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link active" href="#">Your prime Membership</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">Your Prime video</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">you Subscribe &amp; save Item</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link " href="#" >Membership &amp; Subscription</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">Your Amazon Buisnes Account</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">your Seller Account</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link d" href="#" >Manage your content and Devices</a>
+                      </li>
+                    </ul></div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
         <header>
-          <div className={'p-1 a_header_top w-100 ' + this.state.x}>
-            <button className=" me-1 ps-0 btn h-100 " style={{ 'width': '10%' }} >
+          <div className={' p-1 a_header_top  w-100 ' + this.state.x}>
+            <button className=" me-1 ps-0 btn h-100 " style={{ 'width': '9%' }} >
               <img src="./image/slider/antim6.png" />
             </button>
-            <button className=" text-sm-start lh-2 text-white p-1 me-1 btn w-10 h-100" style={{ 'width': '16%' }}>
+            <button className=" text-sm-start lh-2 text-white p-1 me-2 btn w-10 h-100" style={{ 'width': '13%' }}>
               <div className="fw-light ms-3" >Hello</div>
               <div className="fw-bold">
                 <FontAwesomeIcon icon={faMapMarkerAlt} />select your address</div>
             </button>
-            <form className=" me-1 bg-white hform   h-50 d-inline-block " style={{ 'width': '40%' }}>c</form>
-            <button className="me -1 btn w-4 h-100" style={{ 'width': '4%' }}>d</button>
+            <form className=" me-1 bg-white hform   h-50 d-inline-block " style={{ 'width': '46%' }}>c</form>
+            <button className="me -1 btn  h-100 text-white d-inline-block p-0" style={{ 'width': '5%' }}><Flag  code={'in'}className="d-inline-block p-1" height="25" /><FontAwesomeIcon className="d-inline-block" icon={faChevronDown} /></button>
 
-            <button className="me-1 btn w-8 h-100" style={{ 'width': '12%' }}>e</button>
-            <button className="me-1 btn w-8 h-100" style={{ 'width': '8%' }}>f</button>
-            <button className=" btn w-8 h-100" style={{ 'width': '8%' }}>g</button>
+            <button className="me-1 btn  h-100 text-white " style={{ 'width': '12%' }} data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Hello,Sign in
+              <div className="fw-bold"><div className="d-inline-block">Account &amp; list</div> <FontAwesomeIcon className="d-inline-block" icon={faChevronDown} /></div>
+            </button>
+            <button className="me-1 btn  h-100 text-white fs-6 " style={{ 'width': '7%' }}>Return
+              <div className="fw-bold">&amp; Order</div>
+
+            </button>
+            <button className=" btn  h-100 text-white fw-bold" style={{ 'width': '6%' }}><FontAwesomeIcon className="fs-2" icon={faCartPlus} />Cart</button>
           </div>
           <div className=" a_header_bottom w-100" >
             <ul className=" mt-1  fw-bolder nav float-start">
               <li className=" m-0 fw-bold nav-item">
-                <button type="button" className= "m-0 p-0 btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop" > <a className="m-1 p-0 fw-bold fs-6 nav-link" href="#"><FontAwesomeIcon icon={faBars} />All</a></button>
+                <button onClick={this.handlemodal} type="button" className="m-1 p-0 btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop" > <a className="m-1 p-0 fw-bold fs-6 nav-link" href="#"><FontAwesomeIcon className="me-1" icon={faBars} />All</a></button>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">Mobiles</a>
@@ -103,15 +264,15 @@ class App extends Component {
                 <a className="nav-link" href="#">Customer Services</a>
               </li>
             </ul>
-            <ul className=" img-fluid mt-2  float-end ">
-              <a className="hbenner">
+            <ul className=" img-fluid mt-1 p-0  float-end ">
+              <a className=" m-0 p-0 hbenner">
                 <img src="./image/slider/headernenner_.jpg" />
               </a>
             </ul>
           </div>
         </header>
-        <div className="a_main   ">
-          <div className="a_main_top position-relative  ">
+        <div className="a_main  ">
+          <div className="a_main_top  position-relative ">
             <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
               <div className="carousel-inner">
                 <div className="carousel-item active">
@@ -147,7 +308,17 @@ class App extends Component {
             </div>
 
           </div>
-          <div className=" container position-absolute top-0 start-0 a_main_bot w-100 "></div>
+          <div className=" ml-1 position-absolute  a_main_bot">
+            <div className="a_main_bot_1 row m-0">
+              
+                <div className="col-3 p-0 tbdr">A</div>
+                <div className="col-3 p-0 tbdr">B</div>
+                <div className="col-3 p-0  tbdr">C</div>
+                <div className="col-3 p-0  tbdr">D</div>
+              
+            </div>
+          </div>
+          
 
         </div>
         <footer></footer>

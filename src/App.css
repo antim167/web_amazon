@@ -1,5 +1,7 @@
+.tbdr{
+  border:1px solid black;
+}
 header{
-  
   border: 0 dashed red;
   background: hsl(214, 27%, 10%);
 }
@@ -12,7 +14,32 @@ header{
   .a_header_top > button:hover{
     border: 1px solid #fff;
   }
+  .a_singin_modal{
+
+    display: block !important;
+  }
+  .a_singin_modal p{
+   font-size: 13px;
+   
+  }
+  .a_singin_modal a{
+    color:rgb(160, 207, 238) !important ;
+  }
+  .a_ht_singin_modal{
+    top:32px;
+    left:368px;
+  }
+  .a_ht_singin_modal a:hover,a:focus{
+    text-decoration:underline ;
+    color: #f0c350;
+    box-shadow: none !important;
+  }
   
+   .a_ht_singin_modal a{
+    font-size: 12px;
+    padding: 2px !important;
+    color:#131a22;      
+   }
   .a_header_bottom{
   height:49px ;
   border: 1px dashed rgb(34, 53, 34);
@@ -20,7 +47,7 @@ header{
 }
 .a_header_bottom a{
   /*trbl*/
-  padding:5px 10px 5px 10px !important;
+  padding:5px 10px 5px 10px;
   margin-top: 3px;
   font-size: 15px;
   color: #fff;
@@ -33,25 +60,57 @@ header{
 .a_header_bottom a:active,.a_header_bottom a:focus{
   color: #fff;
 }
-
+.mhcolor{
+  background-color:hsl(214, 27%, 10%); 
+}
+.mhul li a{
+ color: #333;
+  padding-left: 30px;
+}
+.mhul li a:hover{
+  background: #eaeded;
+  color: #333;
+}
+.handalmodal{
+  max-width: 365px !important;
+  top:-30px !important;
+  border-radius: 0px !important;
+  transition: all 0.3s linear !important;
+}
+.l934{
+  left: -934px;
+}
+.l334{
+  left:-500px
+}
+.hbenner{
+  padding: 0px !important;
+  margin: 0px;
+}
 
 .a_main{
   height: 6835px;
   border: 0 dashed blue;
   background:#5ad3d3 ;
+  
 }
 .a_main_top{
   height: 600px;
   border: 1PX dashed black;
+  top:0px;
 
 }
 .a_main_bot{
   height: 6525px;
   border: 1PX dashed black;
   background: brown;
-  top :436px !important;
+  top :359px !important;
+  width: 97%;
+  left:20px; 
+}
 
-  
+.a_main_bot>div{
+  height:423px;
 }
 footer{
   height:605px;
