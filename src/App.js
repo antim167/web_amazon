@@ -144,13 +144,13 @@ class App extends Component {
             <div className="modal-content">
               <div className="modal-header a_singin_modal text-center">
                 <button type="button" className="btn btn-warning w-50">Sign in</button>
-               
+
                 <p>New customer? <a href="#" className="btn btn-link">Start here.</a></p>
               </div>
               <div className="modal-body ">
                 <div className="row">
                   <div className="col-6 ">
-                  <h5 className="fw-bold"> Your Lists</h5>
+                    <h5 className="fw-bold"> Your Lists</h5>
                     <ul className="nav flex-column">
                       <li className="nav-item">
                         <a className="nav-link active" href="#">Create a Wash List</a>
@@ -211,7 +211,7 @@ class App extends Component {
                     </ul></div>
                 </div>
               </div>
-              
+
             </div>
           </div>
         </div>
@@ -223,10 +223,10 @@ class App extends Component {
             <button className=" text-sm-start lh-2 text-white p-1 me-2 btn w-10 h-100" style={{ 'width': '13%' }}>
               <div className="fw-light ms-3" >Hello</div>
               <div className="fw-bold">
-                <FontAwesomeIcon icon={faMapMarkerAlt} />select your address</div>
+                <FontAwesomeIcon className="me-1" icon={faMapMarkerAlt} />select your address</div>
             </button>
             <form className=" me-1 bg-white hform   h-50 d-inline-block " style={{ 'width': '46%' }}>c</form>
-            <button className="me -1 btn  h-100 text-white d-inline-block p-0" style={{ 'width': '5%' }}><Flag  code={'in'}className="d-inline-block p-1" height="25" /><FontAwesomeIcon className="d-inline-block" icon={faChevronDown} /></button>
+            <button className="me -1 btn  h-100 text-white d-inline-block p-0" style={{ 'width': '5%' }}><Flag code={'in'} className="d-inline-block p-1" height="25" /><FontAwesomeIcon className="d-inline-block" icon={faChevronDown} /></button>
 
             <button className="me-1 btn  h-100 text-white " style={{ 'width': '12%' }} data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Hello,Sign in
               <div className="fw-bold"><div className="d-inline-block">Account &amp; list</div> <FontAwesomeIcon className="d-inline-block" icon={faChevronDown} /></div>
@@ -309,18 +309,108 @@ class App extends Component {
 
           </div>
           <div className=" ml-1 position-absolute  a_main_bot">
-            <div className="a_main_bot_1 row m-0">
-              
-                <div className="col-3 p-0 tbdr">A</div>
-                <div className="col-3 p-0 tbdr">B</div>
-                <div className="col-3 p-0  tbdr">C</div>
-                <div className="col-3 p-0  tbdr">D</div>
-              
+            <div className="a_main_bot_1 row m-0 mb-3">
+
+              <div className="col-3 p-3 tbdr">
+                <div className="a_mainbox_1 p-3">
+                  <div className=" a_mainbox_1_inner h-100 w-100 bg-danger">
+                    <div className=" bg-warning w-100">
+                      <h5 className="p-1">Top picks for your home</h5>
+                      <div className="row m-0">
+                        <div className="col-6 p-0 tbdr">
+                          <a href="#" className=" btn btn-success rounded-0 p-0 h-100"><img className=" pe-1 h-75 img-fluid" src="./image/slider/mainimg/1.jpg" />ACs</a>
+                        </div>
+                        <div className="col-6 p-0 tbdr">
+                          <a href="#" className=" btn btn-success rounded-0 p-0 h-100"><img className="ps-1 h-75 img-fluid" src="./image/slider/mainimg/2.jpg" />Refrigerator</a>
+                        </div>
+                        <div className="col-6 p-0 tbdr">
+                          <a href="#" className=" btn btn-success rounded-0 p-0 h-100"><img className="pe-1 h-75 img-fluid" src="./image/slider/mainimg/3.jpg" />Microwaves</a>
+                        </div>
+                        <div className="col-6 p-0 tbdr">
+                          <a href="#" className=" btn btn-success rounded-0 p-0 h-100"><img className="ps-1 h-75 img-fluid" src="./image/slider/mainimg/4.jpg" />Washing Machines</a>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" >see more</a>
+                  </div>
+                </div>
+              </div>
+              <div className="col-3 p-3 tbdr">
+                <div className="a_mainbox_1 p-3 ">
+                  <div className="a_mainbox_1_inner h-100 w-100 bg-danger">
+                    <div className="bg-warning ">
+                    <h5 className="p-1">Everyday Esential</h5>
+                      <div className="row m-0">
+                        <div className="col-6 p-0 tbdr">
+                          <a href="#" className="btn btn-success rounded-0 p-0 h-100"><img className="pe-1 h-75 img-fluid" src="../image/mainimagae/5.jpg" />Cleaning essential</a>
+                        </div>
+                        <div className="col-6 p-0 tbdr">
+                          <a href="#" className="btn btn-success rounded-0 h-100 p-0"><img className="ps-1 h-75 img-fluid" src="./image/mainimagae/6.jpg" />Immunity &amp; Healthcare</a>
+                        </div>
+                        <div className="col-6 p-0 tbdr">
+                          <a href="#" className="btn btn-success rounded-0 h-100 p-0"><img className="ps-1 h-75 img-fluid" src="./image/mainimagae/7.jpg" />Women Personal Care</a>
+                        </div>
+                        <div className="col-6 p-0 tbdr">
+                          <a href="#" className="btn btn-success rounded-0 h-100 p-0"><img className="ps-1 h-75 img-fluid" src="./image/mainimagae/8.jpg" />Men's grooming</a>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#">show more</a>
+                  </div>
+                </div>
+              </div>
+              <div className="col-3 p-0 p-3 tbdr">
+                <div className="a_mainbox_1 p-3 ">
+                <div className="a_mainbox_1_inner h-100 w-100 bg-danger">
+                  <div className="bg-warning p-0">
+                  <h5 className="p-1">Bring home the fun | Games for all ages</h5>
+                  <div> <a href="#" className="btn btn-success  p-0"><img className=" img-fluid" src="./image/mainimagae/9.jpg" /></a></div>
+                
+                  </div>
+                  <a href="#" >See more</a>
+                  </div>
+                </div>
+              </div>
+              <div className="col-3 p-0  tbdr">D</div>
+
+            </div>
+            <div className="a_main_bot_2 row m-0 mb-3">
+              <div className="col-3 p-0  tbdr">C</div>
+              <div className="col-3 p-0  tbdr">D</div>
+              <div className="col-3 p-0  tbdr">C</div>
+              <div className="col-3 p-0  tbdr">D</div>
+            </div>
+            <div className="a_main_bot_3 mb-3 ">
+
+            </div>
+            <div className="a_main_bot_4 mb-3 "></div>
+            <div className="a_main_bot_5 row mb-3 m-0">
+              <div className="col-3 p-0  tbdr">C</div>
+              <div className="col-3 p-0  tbdr">D</div>
+              <div className="col-3 p-0  tbdr">C</div>
+              <div className="col-3 p-0  tbdr">D</div>
+            </div>
+            <div className="a_main_bot_6 mb-3"></div>
+            <div className="a_main_bot_7 mb-3"></div>
+            <div className="a_main_bot_8 mb-3 "></div>
+            <div className="a_main_bot_9 row mb-3 m-0">
+              <div className="col-3 p-0  tbdr">C</div>
+              <div className="col-3 p-0  tbdr">D</div>
+              <div className="col-3 p-0  tbdr">C</div>
+              <div className="col-3 p-0  tbdr">D</div>
+            </div>
+            <div className="a_main_bot_10 mb-3"></div>
+            <div className="a_main_bot_11 mb-3"></div>
+            <div className="a_main_bot_12 row mb-3 m-0">
+            <div className="col-3 p-0  tbdr">C</div>
+              <div className="col-3 p-0  tbdr">D</div>
+              <div className="col-3 p-0  tbdr">C</div>
+              <div className="col-3 p-0  tbdr">D</div>
             </div>
           </div>
-          
 
         </div>
+
         <footer></footer>
 
 

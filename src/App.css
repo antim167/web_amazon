@@ -89,7 +89,7 @@ header{
 }
 
 .a_main{
-  height: 6835px;
+  height: 4818px;
   border: 0 dashed blue;
   background:#5ad3d3 ;
   
@@ -101,7 +101,7 @@ header{
 
 }
 .a_main_bot{
-  height: 6525px;
+  height: 4514px;
   border: 1PX dashed black;
   background: brown;
   top :359px !important;
@@ -109,9 +109,71 @@ header{
   left:20px; 
 }
 
-.a_main_bot>div{
+.a_main_bot_1{
   height:423px;
 }
+.a_mainbox_1{
+  height: 98%;
+  width: 98%;
+  background: blue;
+}
+.a_mainbox_1_inner >div{
+  height:90%
+}
+.a_mainbox_1_inner .col-6{
+  height:140px;
+  
+}
+.a_mainbox_1_inner .row a{
+font-size: 12px;
+}
+.a_mainbox_1_inner a{
+  text-decoration: none;
+}
+.a_main_bot_2{
+  height:423px;
+}
+.a_main_bot_3{
+  height:367px;
+background-color: palegreen;
+}
+.a_main_bot_4{
+  height:287px;
+  background-color:#f0c350;
+}
+.a_main_bot_5{
+  height:423px;
+  background-color:blue;
+}
+.a_main_bot_6{
+  height:287px;
+  background-color:blueviolet;
+}
+.a_main_bot_7{
+  height:283px;
+  background-color:crimson;
+}
+.a_main_bot_8{
+  height:253px;
+  background-color:darkgreen;
+}
+.a_main_bot_9{
+  height:423px;
+  background-color:darkslateblue;
+}
+.a_main_bot_10{
+  height:283px;
+  background-color:dodgerblue;
+}
+.a_main_bot_11{
+  height:283px;
+  background-color:gold;
+}
+.a_main_bot_12{
+  height:423px;
+  background-color:hotpink;
+}
+
 footer{
   height:605px;
   border: 0 dashed green;
