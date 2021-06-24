@@ -14,6 +14,11 @@ header{
   .a_header_top > button:hover{
     border: 1px solid #fff;
   }
+  .a_ht_countrydd{
+    width: 20% !important;
+    left:950px !important;
+    top:20px !important;
+  }
   .a_singin_modal{
 
     display: block !important;
@@ -81,7 +86,7 @@ header{
   left: -934px;
 }
 .l334{
-  left:-500px
+  left:-566px
 }
 .hbenner{
   padding: 0px !important;
@@ -133,10 +138,31 @@ font-size: 12px;
 .a_main_bot_2{
   height:423px;
 }
+.a_mainbox_2{
+  height: 98%;
+  width: 98%;
+  background: blue;
+}
+.a_mainbox_2_inner >div{
+  height:90%
+}
+.a_mainbox_2_inner .col-6{
+  height:140px;
+  
+}
+.a_mainbox_2_inner .row a{
+font-size: 12px;
+}
+.a_mainbox_2_inner a{
+  text-decoration: none;
+}
 .a_main_bot_3{
   height:367px;
 background-color: palegreen;
 }
+
+
+
 .a_main_bot_4{
   height:287px;
   background-color:#f0c350;
@@ -144,6 +170,24 @@ background-color: palegreen;
 .a_main_bot_5{
   height:423px;
   background-color:blue;
+}
+.a_mainbox_5{
+  height: 98%;
+  width: 98%;
+  background: #f0c350;
+}
+.a_mainbox_5_inner >div{
+  height:90%
+}
+.a_mainbox_5_inner .col-6{
+  height:140px;
+  
+}
+.a_mainbox_5_inner .row a{
+font-size: 12px;
+}
+.a_mainbox_5_inner a{
+  text-decoration: none;
 }
 .a_main_bot_6{
   height:287px;
@@ -160,6 +204,24 @@ background-color: palegreen;
 .a_main_bot_9{
   height:423px;
   background-color:darkslateblue;
+}
+.a_mainbox_9{
+  height: 98%;
+  width: 98%;
+  background: #f0c350;
+}
+.a_mainbox_9_inner >div{
+  height:90%
+}
+.a_mainbox_9_inner .col-6{
+  height:140px;
+  
+}
+.a_mainbox_9_inner .row a{
+font-size: 12px;
+}
+.a_mainbox_9_inner a{
+  text-decoration: none;
 }
 .a_main_bot_10{
   height:283px;
