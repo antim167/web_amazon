@@ -47,45 +47,45 @@ class App extends Component {
     return (
 
       <div className="App ">
-        <div class="modal a_ht_countrydd" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdrop2Label" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
-                  <label class="form-check-label" for="flexRadioDefault2">
+        <div className="modal a_ht_countrydd" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdrop2Label" aria-hidden="true">
+          <div className="modal-dialog">
+            <div className="modal-content">
+              <div className="modal-header">
+                <div className="form-check">
+                  <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
+                  <label className="form-check-label" for="flexRadioDefault2">
                     Default checked radio
                   </label>
                 </div>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <div class="modal-body">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                  <label class="form-check-label" for="flexRadioDefault1">
+              <div className="modal-body">
+                <div className="form-check">
+                  <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                  <label className="form-check-label" for="flexRadioDefault1">
                     Default radio
                   </label>
                 </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
-                  <label class="form-check-label" for="flexRadioDefault2">
+                <div className="form-check">
+                  <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
+                  <label className="form-check-label" for="flexRadioDefault2">
                     Default checked radio
                   </label>
                 </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                  <label class="form-check-label" for="flexRadioDefault1">
+                <div className="form-check">
+                  <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                  <label className="form-check-label" for="flexRadioDefault1">
                     Default radio
                   </label>
                 </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
-                  <label class="form-check-label" for="flexRadioDefault2">
+                <div className="form-check">
+                  <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
+                  <label className="form-check-label" for="flexRadioDefault2">
                     Default checked radio
                   </label>
                 </div>
               </div>
-              <div class="modal-footer">
+              <div className="modal-footer">
                 <div ><p><Flag code={'in'} className="d-inline-block p-1" height="25" />You are shopping on Amazon.in. </p>
                   <a href="#" className="btn btn-link">Change country/region</a>
                 </div>
@@ -179,7 +179,7 @@ class App extends Component {
                   </li>
                 </ul>
               </div>
-              
+
             </div>
           </div>
         </div>
@@ -285,7 +285,7 @@ class App extends Component {
           <div className=" a_header_bottom w-100" >
             <ul className=" mt-1  fw-bolder nav float-start">
               <li className=" m-0 fw-bold nav-item">
-                <button onClick={this.handlemodal} type="button" className="m-1 p-0 btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop" > <a className="m-1 p-0 fw-bold fs-6 nav-link" href="#"><FontAwesomeIcon className="me-1" icon={faBars} />All</a></button>
+                <button onClick={this.handlemodal} type="button" className="m-1 p-0 btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop" > <a className=" p-0 fw-bold fs-6 nav-link" href="#"><FontAwesomeIcon className="me-1" icon={faBars} />All</a></button>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">Mobiles</a>
@@ -588,16 +588,16 @@ class App extends Component {
                       <h5>Give your home classroom a makeover</h5>
                       <div className="row m-0">
                         <div className="col-6 p-0 tbdr">
-                          <a href="#" className="btn btn-success rounded-0 p-0 h-100"><img className="pe-1 h-75 img-fluid" src="../image/mainimagae/31.jpg" />Cabinets &amp; Bookshelves </a>
+                          <a href="#" className="btn btn-success rounded-0 p-0 h-100"><img className="pe-1 h-75 img-fluid" src="../image/mainimagae/19.jpg" />Cabinets &amp; Bookshelves </a>
                         </div>
                         <div className="col-6 p-0 tbdr">
-                          <a href="#" className="btn btn-success rounded-0 h-100 p-0"><img className="ps-1 h-75 img-fluid" src="./image/mainimagae/32.jpg" />Wardrobes</a>
+                          <a href="#" className="btn btn-success rounded-0 h-100 p-0"><img className="ps-1 h-75 img-fluid" src="./image/mainimagae/20.jpg" />Wardrobes</a>
                         </div>
                         <div className="col-6 p-0 tbdr">
-                          <a href="#" className="btn btn-success rounded-0 h-100 p-0"><img className="ps-1 h-75 img-fluid" src="./image/mainimagae/33.jpg" />Study Lamps</a>
+                          <a href="#" className="btn btn-success rounded-0 h-100 p-0"><img className="ps-1 h-75 img-fluid" src="./image/mainimagae/21.jpg" />Study Lamps</a>
                         </div>
                         <div className="col-6 p-0 tbdr">
-                          <a href="#" className="btn btn-success rounded-0 h-100 p-0"><img className="ps-1 h-75 img-fluid" src="./image/mainimagae/34.jpg" />Study table &amp; chairs</a>
+                          <a href="#" className="btn btn-success rounded-0 h-100 p-0"><img className="ps-1 h-75 img-fluid" src="./image/mainimagae/22.jpg" />Study table &amp; chairs</a>
                         </div>
                       </div>
                     </div>
@@ -620,16 +620,16 @@ class App extends Component {
                       <h5 >School From Home | Online classes made easy</h5>
                       <div className="row m-0">
                         <div className="col-6 p-0 tbdr">
-                          <a href="#" className="btn btn-success rounded-0 p-0 h-100"><img className="pe-1 h-75 img-fluid" src="../image/mainimagae/35.jpg" />Laptops &amp; Projectores</a>
+                          <a href="#" className="btn btn-success rounded-0 p-0 h-100"><img className="pe-1 h-75 img-fluid" src="../image/mainimagae/23.jpg" />Laptops &amp; Projectores</a>
                         </div>
                         <div className="col-6 p-0 tbdr">
-                          <a href="#" className="btn btn-success rounded-0 h-100 p-0"><img className="ps-1 h-75 img-fluid" src="./image/mainimagae/36.jpg" />HEadsets &amp; Speakers</a>
+                          <a href="#" className="btn btn-success rounded-0 h-100 p-0"><img className="ps-1 h-75 img-fluid" src="./image/mainimagae/24.jpg" />HEadsets &amp; Speakers</a>
                         </div>
                         <div className="col-6 p-0 tbdr">
-                          <a href="#" className="btn btn-success rounded-0 h-100 p-0"><img className="ps-1 h-75 img-fluid" src="./image/mainimagae/27.jpg" />Mobile &amp; Accessories</a>
+                          <a href="#" className="btn btn-success rounded-0 h-100 p-0"><img className="ps-1 h-75 img-fluid" src="./image/mainimagae/25.jpg" />Mobile &amp; Accessories</a>
                         </div>
                         <div className="col-6 p-0 tbdr">
-                          <a href="#" className="btn btn-success rounded-0 h-100 p-0"><img className="ps-1 h-75 img-fluid" src="./image/mainimagae/28.jpg" />Printer &amp; ink</a>
+                          <a href="#" className="btn btn-success rounded-0 h-100 p-0"><img className="ps-1 h-75 img-fluid" src="./image/mainimagae/26.jpg" />Printer &amp; ink</a>
                         </div>
                       </div>
                     </div>
@@ -646,16 +646,16 @@ class App extends Component {
                       <h5 >Pick from these types of masks</h5>
                       <div className="row m-0">
                         <div className="col-6 p-0 tbdr">
-                          <a href="#" className="btn btn-success rounded-0 p-0 h-100"><img className="pe-1 h-75 img-fluid" src="../image/mainimagae/5.jpg" />N95 Mask &amp; respirator</a>
+                          <a href="#" className="btn btn-success rounded-0 p-0 h-100"><img className="pe-1 h-75 img-fluid" src="../image/mainimagae/27.jpg" />N95 Mask &amp; respirator</a>
                         </div>
                         <div className="col-6 p-0 tbdr">
-                          <a href="#" className="btn btn-success rounded-0 h-100 p-0"><img className="ps-1 h-75 img-fluid" src="./image/mainimagae/6.jpg" />Cloth mask</a>
+                          <a href="#" className="btn btn-success rounded-0 h-100 p-0"><img className="ps-1 h-75 img-fluid" src="./image/mainimagae/28.jpg" />Cloth mask</a>
                         </div>
                         <div className="col-6 p-0 tbdr">
-                          <a href="#" className="btn btn-success rounded-0 h-100 p-0"><img className="ps-1 h-75 img-fluid" src="./image/mainimagae/7.jpg" />Kids mask</a>
+                          <a href="#" className="btn btn-success rounded-0 h-100 p-0"><img className="ps-1 h-75 img-fluid" src="./image/mainimagae/29.jpg" />Kids mask</a>
                         </div>
                         <div className="col-6 p-0 tbdr">
-                          <a href="#" className="btn btn-success rounded-0 h-100 p-0"><img className="ps-1 h-75 img-fluid" src="./image/mainimagae/8.jpg" />view the mask store</a>
+                          <a href="#" className="btn btn-success rounded-0 h-100 p-0"><img className="ps-1 h-75 img-fluid" src="./image/mainimagae/30.jpg" />view the mask store</a>
                         </div>
                       </div>
                     </div>
@@ -672,16 +672,16 @@ class App extends Component {
                       <h5 className="p-1">Make hobbies more fun</h5>
                       <div className="row m-0">
                         <div className="col-6 p-0 tbdr">
-                          <a href="#" className="btn btn-success rounded-0 p-0 h-100"><img className="pe-1 h-75 img-fluid" src="../image/mainimagae/5.jpg" />Cleaning essential</a>
+                          <a href="#" className="btn btn-success rounded-0 p-0 h-100"><img className="pe-1 h-75 img-fluid" src="../image/mainimagae/31.jpg" />Cleaning essential</a>
                         </div>
                         <div className="col-6 p-0 tbdr">
-                          <a href="#" className="btn btn-success rounded-0 h-100 p-0"><img className="ps-1 h-75 img-fluid" src="./image/mainimagae/6.jpg" />Immunity &amp; Healthcare</a>
+                          <a href="#" className="btn btn-success rounded-0 h-100 p-0"><img className="ps-1 h-75 img-fluid" src="./image/mainimagae/32.jpg" />Immunity &amp; Healthcare</a>
                         </div>
                         <div className="col-6 p-0 tbdr">
-                          <a href="#" className="btn btn-success rounded-0 h-100 p-0"><img className="ps-1 h-75 img-fluid" src="./image/mainimagae/7.jpg" />Women Personal Care</a>
+                          <a href="#" className="btn btn-success rounded-0 h-100 p-0"><img className="ps-1 h-75 img-fluid" src="./image/mainimagae/33.jpg" />Women Personal Care</a>
                         </div>
                         <div className="col-6 p-0 tbdr">
-                          <a href="#" className="btn btn-success rounded-0 h-100 p-0"><img className="ps-1 h-75 img-fluid" src="./image/mainimagae/8.jpg" />Men's grooming</a>
+                          <a href="#" className="btn btn-success rounded-0 h-100 p-0"><img className="ps-1 h-75 img-fluid" src="./image/mainimagae/34.jpg" />Men's grooming</a>
                         </div>
                       </div>
                     </div>
@@ -695,7 +695,7 @@ class App extends Component {
                   <div className="a_mainbox_9_inner h-100 w-100 bg-danger">
                     <div className="bg-warning p-0">
                       <h5>Echo dot smart bulb combo | Just ask Alexa</h5>
-                      <div> <a href="#" className="btn btn-success  p-0"><img className=" img-fluid" src="./image/mainimagae/38.jpg" /></a></div>
+                      <div> <a href="#" className="btn btn-success  p-0"><img className=" img-fluid" src="./image/mainimagae/39.jpg" /></a></div>
 
                     </div>
                     <a href="#" >See more</a>
@@ -712,25 +712,13 @@ class App extends Component {
                   <div className="a_mainbox_9_inner h-100 w-100 bg-danger">
                     <div className="bg-warning p-0">
                       <h5 className="p-1">Bring home the fun | Games for all ages</h5>
-                      <div> <a href="#" className="btn btn-success  p-0"><img className=" img-fluid" src="./image/mainimagae/39.jpg" /></a></div>
-
-                    </div>
-                    <a href="#" >See more</a>
-                  </div>
-                </div>
-
-              </div>
-              <div className="col-3 p-0 p-3 tbdr">
-                <div className="a_mainbox_9 p-3 ">
-                  <div className="a_mainbox_9_inner h-100 w-100 bg-danger">
-                    <div className="bg-warning p-0">
-                      <h5 className="p-1">Bring home the fun | Games for all ages</h5>
                       <div> <a href="#" className="btn btn-success  p-0"><img className=" img-fluid" src="./image/mainimagae/40.jpg" /></a></div>
 
                     </div>
                     <a href="#" >See more</a>
                   </div>
                 </div>
+
               </div>
               <div className="col-3 p-0 p-3 tbdr">
                 <div className="a_mainbox_9 p-3 ">
@@ -749,7 +737,19 @@ class App extends Component {
                   <div className="a_mainbox_9_inner h-100 w-100 bg-danger">
                     <div className="bg-warning p-0">
                       <h5 className="p-1">Bring home the fun | Games for all ages</h5>
-                      <div> <a href="#" className="btn btn-success  p-0"><img className=" img-fluid" src="./image/mainimagae/9.jpg" /></a></div>
+                      <div> <a href="#" className="btn btn-success  p-0"><img className=" img-fluid" src="./image/mainimagae/42.jpg" /></a></div>
+
+                    </div>
+                    <a href="#" >See more</a>
+                  </div>
+                </div>
+              </div>
+              <div className="col-3 p-0 p-3 tbdr">
+                <div className="a_mainbox_9 p-3 ">
+                  <div className="a_mainbox_9_inner h-100 w-100 bg-danger">
+                    <div className="bg-warning p-0">
+                      <h5 className="p-1">Bring home the fun | Games for all ages</h5>
+                      <div> <a href="#" className="btn btn-success  p-0"><img className=" img-fluid" src="./image/mainimagae/43.jpg" /></a></div>
 
                     </div>
                     <a href="#" >See more</a>
@@ -761,7 +761,163 @@ class App extends Component {
 
         </div>
 
-        <footer></footer>
+        <footer>
+          <a href="#" className="btn btn-success w-100 border-0 rounded-0  lh-lg" style={{ backgroundColor: '#37475a', height: '50px' }}>Back to top</a>
+          <div className="a_footer_top pt-5"  >
+            <div className="container ">
+              <div className="row lh-1 fw-normal  m-0 text-white">
+                <div className="col-3 fs-6 p-0">
+                  <h6>Get to Know Us</h6>
+                  <ul className="nav flex-column">
+                    <li className="nav-item">
+                      <a className="nav-link " href="#">About Us</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Careers</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Press Releases</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link " href="#" >Amazon Cares</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link " href="#" >Gift a Smaile</a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-3 ">
+                  <h6>Connect with Us</h6>
+                  <ul className="nav flex-column">
+                    <li className="nav-item">
+                      <a className="nav-link " href="#">Facebook</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Twiter</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">instagram</a>
+                    </li>
+
+                  </ul>
+                </div>
+                <div className="col-3 ">
+                  <h6>Make Money with Us</h6>
+                  <ul className="nav flex-column">
+                    <li className="nav-item">
+                      <a className="nav-link " href="#">Sell on Amazon</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Sell under Amazon Accelerator</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Amazon Global Selling</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link " href="#" >Become an Affiliate</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link " href="#" >Fulfilment by Amazon</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link " href="#" >Advertise Your Products</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link " href="#" >Amazon Pay on Merchants</a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-3 ">
+                  <h6>Let Us Help You</h6>
+                  <ul className="nav flex-column">
+                    <li className="nav-item">
+                      <a className="nav-link " href="#">Covid-19 and Amazon</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Your Account</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Return Center</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link " href="#" >100% Purches Protected</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Amazon App Dwonload</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link " href="#" >Amazon Assistant Dwonload</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Help</a>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr className="text-secondary" />
+            <div className="d-flex justify-content-center">
+            <ul class="nav">
+              <li class="nav-item ms-2 me-2">
+                <a class="nav-link"  href="#">Australia</a>
+              </li>
+              <li class="nav-item ms-2 me-2">
+                <a class="nav-link" href="#">Brazil</a>
+              </li>
+              <li class="nav-item ms-2 me-2">
+                <a class="nav-link" href="#">Canada</a>
+              </li>
+              <li class="nav-item ms-2 me-2">
+                <a class="nav-link " href="#">china</a>
+              </li>
+            
+              <li class="nav-item ms-2 me-2">
+                <a class="nav-link"  href="#">France</a>
+              </li>
+              <li class="nav-item ms-2 me-2">
+                <a class="nav-link" href="#">Mexico</a>
+              </li>
+              <li class="nav-item ms-2 me-2">
+                <a class="nav-link" href="#">Poland</a>
+              </li>
+              <li class="nav-item ms-2 me-2">
+                <a class="nav-link " href="#">Singapore</a>
+              </li>
+            
+            
+              <li class="nav-item ms-2 me-2">
+                <a class="nav-link"  href="#">spain</a>
+              </li>
+              <li class="nav-item ms-2 me-2">
+                <a class="nav-link" href="#">united stated</a>
+              </li>
+              <li class="nav-item ms-2 me-2">
+                <a class="nav-link" href="#">united Arab</a>
+              </li>
+              <li class="nav-item ms-2 me-2">
+                <a class="nav-link " href="#">china</a>
+              </li>
+              
+              <li class="nav-item ms-2 me-2">
+                <a class="nav-link" href="#">itly</a>
+              </li>
+              <li class="nav-item ms-2 me-2">
+                <a class="nav-link " href="#">japan</a>
+              </li>
+              <li class="nav-item ms-2 me-2">
+                <a class="nav-link " href="#">natherland</a>
+              </li>
+              <li class="nav-item ms-2 me-2">
+                <a class="nav-link " href="#">china</a>
+              </li>
+              
+              
+            </ul>
+            </div>
+          </div>
+        </footer>
+
 
 
       </div>

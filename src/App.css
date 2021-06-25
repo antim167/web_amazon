@@ -94,7 +94,7 @@ header{
 }
 
 .a_main{
-  height: 4818px;
+  height: 5017px;
   border: 0 dashed blue;
   background:#5ad3d3 ;
   
@@ -106,7 +106,7 @@ header{
 
 }
 .a_main_bot{
-  height: 4514px;
+  height: 4707px;
   border: 1PX dashed black;
   background: brown;
   top :359px !important;
@@ -240,5 +240,25 @@ footer{
   height:605px;
   border: 0 dashed green;
   background: #131a22;
-  bottom: 6835px;
+  
+}
+.a_footer_top{
+height:452px;
+background-color:#232f3e;
+}
+.a_footer_top a{
+  padding:4px 0px;
+  color:#fff;
+}
+.a_footer_top a:hover{
+  text-decoration:underline;
+  color: #fff;
+}
+.a_footer_top .container{
+  max-width: 990px;
+}
+
+.a_footer_bottom{
+  height:227px;
+  background-color: #131921;
 }
