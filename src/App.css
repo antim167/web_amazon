@@ -31,8 +31,8 @@ header{
     color:rgb(160, 207, 238) !important ;
   }
   .a_ht_singin_modal{
-    top:32px;
-    left:368px;
+    top:32px !important;
+    left:368px !important;
   }
   .a_ht_singin_modal a:hover,a:focus{
     text-decoration:underline ;
@@ -96,19 +96,27 @@ header{
 .a_main{
   height: 5017px;
   border: 0 dashed blue;
-  background:#5ad3d3 ;
+ 
   
 }
 .a_main_top{
   height: 600px;
-  border: 1PX dashed black;
+  border: 1px dashed black;
   top:0px;
+  
 
+}
+.a_main_top .carousel-control-next,.a_main_top .carousel-control-prev {
+height: 38%;
+
+width: 40px;
+border:2px solid lightskyblue ;
+outline: 2px solid white;
 }
 .a_main_bot{
   height: 4707px;
   border: 1PX dashed black;
-  background: brown;
+  background-color:wheat;
   top :359px !important;
   width: 97%;
   left:20px; 
@@ -141,7 +149,7 @@ font-size: 12px;
 .a_mainbox_2{
   height: 98%;
   width: 98%;
-  background: blue;
+  background:#fff;
 }
 .a_mainbox_2_inner >div{
   height:90%
@@ -157,16 +165,60 @@ font-size: 12px;
   text-decoration: none;
 }
 .a_main_bot_3{
-  height:367px;
-background-color: palegreen;
+  height:364px;
+}
+.imgcont{
+  height:300px ;
+  background-color: #8050f0;
+}
+.carouselExampleControls2 .carousel-control-prev,.carouselExampleControls2 .carousel-control-next{
+  background:#fff;
+  width: 3%;
+  height: 30%;
+  top:111px;
+  display: block;
+  opacity: 1 !important;
+}
+.carouselExampleControls2 .carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: #333;
 }
 
-
-
+.carouselExampleControls2 .carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color:#333;
+}
+.carouselExampleControls2 .carousel-control-prev{
+  box-shadow: 2px 0px 3px 3px rgba(0, 0,0, 0.5);
+}
+.carouselExampleControls2 .carousel-control-next{
+  box-shadow: -2px 0px 3px 3px rgba(0, 0,0, 0.5);
+}
 .a_main_bot_4{
   height:287px;
-  background-color:#f0c350;
+  
 }
+.imgcont2{
+  height: 237px;
+  
+}
+.carouselExampleControls3 .carousel-control-next-icon:after ,.carouselExampleControls3 .carousel-control-prev-icon:after
+{
+  font-size: 45px !important; 
+}
+.carouselExampleControls3 .carousel-control-prev,.carouselExampleControls3 .carousel-control-next
+{
+  top:90px !important;
+  opacity: 0 !important; 
+}
+.a_main_bot_4:hover .carousel-control-prev,.a_main_bot_4:hover .carousel-control-next
+{
+  opacity: 1 !important; 
+}
+
 .a_main_bot_5{
   height:423px;
   background-color:blue;
@@ -193,13 +245,27 @@ font-size: 12px;
   height:287px;
   background-color:blueviolet;
 }
+
+.a_main_bot_6:hover .carousel-control-prev,.a_main_bot_6:hover .carousel-control-next
+{
+  opacity: 1 !important; 
+}
+
 .a_main_bot_7{
   height:283px;
-  background-color:crimson;
 }
+.a_main_bot_7 a{
+  height: 100%;
+  width: 94%;
+}
+
 .a_main_bot_8{
-  height:253px;
+  height:283px;
   background-color:darkgreen;
+}
+.a_main_bot_8:hover .carousel-control-prev,.a_main_bot_8:hover .carousel-control-next
+{
+  opacity: 1 !important; 
 }
 .a_main_bot_9{
   height:423px;
@@ -227,9 +293,17 @@ font-size: 12px;
   height:283px;
   background-color:dodgerblue;
 }
+.a_main_bot_10:hover .carousel-control-prev,.a_main_bot_10:hover .carousel-control-next
+{
+  opacity: 1 !important; 
+}
 .a_main_bot_11{
   height:283px;
   background-color:gold;
+}
+.a_main_bot_11:hover .carousel-control-prev,.a_main_bot_11:hover .carousel-control-next
+{
+  opacity: 1 !important; 
 }
 .a_main_bot_12{
   height:423px;
