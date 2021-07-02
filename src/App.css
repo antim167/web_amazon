@@ -18,6 +18,8 @@ header{
     width: 20% !important;
     left:950px !important;
     top:20px !important;
+    position: absolute;
+    z-index: 10003 !important;
   }
   .a_singin_modal{
 
@@ -33,6 +35,8 @@ header{
   .a_ht_singin_modal{
     top:32px !important;
     left:368px !important;
+    position: absolute;
+    z-index: 10003 !important;
   }
   .a_ht_singin_modal a:hover,a:focus{
     text-decoration:underline ;
@@ -61,9 +65,45 @@ header{
 .a_header_bottom a:hover{
   outline: 1px solid #fff;
   color: #fff;
+
 }
 .a_header_bottom a:active,.a_header_bottom a:focus{
   color: #fff;
+}
+.overylay{
+  background-color:rgba(0, 0,0, 0.6);
+  position: fixed !important;
+  z-index: 10000;
+  transition: all linear 0.5s;
+}
+.a_visible{
+  opacity: 1;
+  visibility: visible;
+}
+.a_invisible{
+  opacity: 0;
+  visibility: hidden;
+}
+header{
+  position: relative ;
+  z-index: 10001;
+}
+.primebox{
+  width:239px ;
+  height:240px;
+  background-color: white;
+}
+.prime:hover ~div{
+display: block !important;
+}
+.arrow-up{
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #fff;
+  top:-10px;
+  left:46px;
 }
 .mhcolor{
   background-color:hsl(214, 27%, 10%); 
@@ -81,6 +121,8 @@ header{
   top:-30px !important;
   border-radius: 0px !important;
   transition: all 0.3s linear !important;
+  position: absolute;
+    z-index: 10003 !important;
 }
 .l934{
   left: -934px;
@@ -106,12 +148,12 @@ header{
   
 
 }
-.a_main_top .carousel-control-next,.a_main_top .carousel-control-prev {
+.a_main_top:hover .carousel-control-next,.a_main_top:hover .carousel-control-prev {
 height: 38%;
 
 width: 40px;
-border:2px solid lightskyblue ;
-outline: 2px solid white;
+border:3px solid lightskyblue ;
+outline: 3px solid white;
 }
 .a_main_bot{
   height: 4707px;
@@ -128,7 +170,7 @@ outline: 2px solid white;
 .a_mainbox_1{
   height: 98%;
   width: 98%;
-  background: blue;
+  background:#fff;
 }
 .a_mainbox_1_inner >div{
   height:90%
@@ -145,24 +187,6 @@ font-size: 12px;
 }
 .a_main_bot_2{
   height:423px;
-}
-.a_mainbox_2{
-  height: 98%;
-  width: 98%;
-  background:#fff;
-}
-.a_mainbox_2_inner >div{
-  height:90%
-}
-.a_mainbox_2_inner .col-6{
-  height:140px;
-  
-}
-.a_mainbox_2_inner .row a{
-font-size: 12px;
-}
-.a_mainbox_2_inner a{
-  text-decoration: none;
 }
 .a_main_bot_3{
   height:364px;
@@ -221,26 +245,9 @@ font-size: 12px;
 
 .a_main_bot_5{
   height:423px;
-  background-color:blue;
+
 }
-.a_mainbox_5{
-  height: 98%;
-  width: 98%;
-  background: #f0c350;
-}
-.a_mainbox_5_inner >div{
-  height:90%
-}
-.a_mainbox_5_inner .col-6{
-  height:140px;
-  
-}
-.a_mainbox_5_inner .row a{
-font-size: 12px;
-}
-.a_mainbox_5_inner a{
-  text-decoration: none;
-}
+
 .a_main_bot_6{
   height:287px;
   background-color:blueviolet;

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMapMarkerAlt, faBars, faUser, faChevronRight, faCartPlus, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faMapMarkerAlt, faBars, faUser, faChevronRight, faCartPlus, faChevronDown, faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import { Modal } from 'react-bootstrap';
 import Flag from 'react-world-flags';
 import Ember from '../assets/font/ember/AmazonEmber_Rg.ttf';
@@ -26,7 +26,8 @@ class Header extends Component {
     x: '',
     y: ' l934',
     showSingModal: false,
-    showAllModal: false
+    showAllModal: false,
+    overylay:'a_invisible'
   }
   //2.constructor
   constructor(props) {
@@ -43,9 +44,15 @@ class Header extends Component {
 
     }
   }
-  closemodal = () => {
-    this.setState({ y: ' 1934 ' })
+  overylay = () =>{
+    this.setState({overylay:'a_visible'})
   }
+  hideovery=()=>{
+    this.setState({overylay:'a_invisible'})
+  }
+      closemodal = () => {
+      this.setState({ y: ' 1934 ' })
+    }
   handlemodal = () => {
     this.setState({ y: ' l334' })
   }
@@ -78,9 +85,10 @@ class Header extends Component {
 
     return (
       <>
-      <style>
-        {myCustomFont}
-      </style>
+        <style>
+          {myCustomFont}
+        </style>
+        <div className={'overylay w-100 h-100 ' + this.state.overylay}></div>
         <Modal className=" handalmodal" show={this.state.showAllModal} onHide={handleClose2} animation={false}>
           <Modal.Header className="mhcolor text-white" closeButton>
             <h5 className="modal-title" id="staticBackdropLabel"><FontAwesomeIcon icon={faUser} /> Hello, Sign in</h5>
@@ -285,7 +293,7 @@ class Header extends Component {
               <img src="./image/slider/antim6.png" />
             </button>
             <button className=" text-sm-start lh-2 text-white p-1 me-2 btn w-10 h-100" style={{ 'width': '13%' }}>
-              <div className="fw-light ms-3" >Hello</div>
+              <div className=" ms-3" >Hello</div>
               <div className="fw-bold">
                 <FontAwesomeIcon className="me-1" icon={faMapMarkerAlt} />select your address</div>
             </button>
@@ -302,18 +310,24 @@ class Header extends Component {
             <button className=" btn  h-100 text-white fw-bold" style={{ 'width': '6%' }}><FontAwesomeIcon className="fs-2" icon={faCartPlus} />Cart</button>
           </div>
           <div className=" a_header_bottom w-100" >
-            <ul className=" mt-1  fw-bolder nav float-start">
-              <li className=" m-0 fw-bold nav-item">
+            <ul className=" mt-1   nav float-start">
+              <li className=" m-0  nav-item">
                 <button onMouseOver={handleShow2} type="button" className="m-1 p-0 btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop" > <a className=" p-0 fw-bold fs-6 nav-link" href="#"><FontAwesomeIcon className="me-1" icon={faBars} />All</a></button>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Mobiles</a>
+                <a className="nav-link" href="#">Best Seller</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">Mobiles</a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">prime</a>
+              <li className="nav-item position-reletive">
+                <a onMouseOut={this.hideovery} onMouseOver={this.overylay} className="nav-link prime " href="#" >prime<FontAwesomeIcon icon={faCaretDown} /></a>
+             <div className="primebox position-absolute rounded-1 p-3  d-none">
+               <div className ="arrow-up position-absolute ">
+                 
+               </div>
+               <img className="img-fluid" src="../image/mainimagae/prime.jpg"/>
+               </div>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">Electronic</a>
