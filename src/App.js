@@ -10,6 +10,8 @@ import Detail from './pages/Detail';
 import Search from './pages/Search';
 import Home from './pages/Home';
 import Checkout from './pages/Checkout';
+import SingIn from './pages/SignIn';
+import Register from './pages/Register';
 /**
 * @author
 * @class App
@@ -27,9 +29,11 @@ class App extends Component {
 return (
       <Router>
          <Route path="/" exact component={ Home }></Route>
-         <Route path="/search" exact component={ Search }></Route>
-         <Route path="/detail" exact component={ Detail }></Route>
-        <Route path="/checkout" exact component={ Checkout }></Route>
+         <Route path="/search"  component={ Search }></Route>
+         <Route path="/detail" e component={ Detail }></Route>
+        <Route path="/checkout"  component={ Checkout }></Route>
+        <Route path="/signin" component={ SingIn }></Route>
+        <Route path="/register" component={ Register }></Route>
        </Router>  
     );
   }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMapMarkerAlt, faBars, faUser, faChevronRight, faCartPlus, faChevronDown, faCaretDown } from '@fortawesome/free-solid-svg-icons';
+import { faMapMarkerAlt, faBars, faUser, faChevronRight, faCartPlus, faChevronDown, faCaretDown, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { Modal } from 'react-bootstrap';
 import Flag from 'react-world-flags';
 import Ember from '../assets/font/ember/AmazonEmber_Rg.ttf';
@@ -25,9 +25,12 @@ class Header extends Component {
   state = {
     x: '',
     y: ' l934',
+
     showSingModal: false,
     showAllModal: false,
-    overylay:'a_invisible'
+    overylay: 'a_invisible',
+    z: ' '
+
   }
   //2.constructor
   constructor(props) {
@@ -44,21 +47,29 @@ class Header extends Component {
 
     }
   }
-  overylay = () =>{
-    this.setState({overylay:'a_visible'})
+  overylay = () => {
+    this.setState({ overylay: 'a_visible' })
   }
-  hideovery=()=>{
-    this.setState({overylay:'a_invisible'})
+  hideovery = () => {
+    this.setState({ overylay: 'a_invisible' })
   }
-      closemodal = () => {
-      this.setState({ y: ' 1934 ' })
-    }
+  closemodal = () => {
+    this.setState({ y: ' 1934 ' })
+  }
   handlemodal = () => {
     this.setState({ y: ' l334' })
   }
   componentDidMount() {
     //this method will be called when page/componet is render
     window.addEventListener('scroll', this.handleScroll);
+  }
+  formHandle = () => {
+    if (this.state.z === 'formboder') {
+      this.setState({ z: '' })
+    }
+    else {
+      this.setState({ z: 'formboder' })
+    }
   }
   render() {
 
@@ -175,141 +186,154 @@ class Header extends Component {
           </Modal.Body>
 
         </Modal>
-        <Modal className="a_ht_singin_modal" show={this.state.showSingModa} onHide={handleClose} animation={false}>
-          <Modal.Header className=" a_singin_modal text-center" closeButton>
-            <button type="button" className="btn btn-warning w-50">Sign in</button>
-
-            <p>New customer? <a href="#" className="btn btn-link">Start here.</a></p>
-          </Modal.Header>
-          <Modal.Body>
-            <div className="row">
-              <div className="col-6 ">
-                <h5 className="fw-bold"> Your Lists</h5>
-                <ul className="nav flex-column">
-                  <li className="nav-item">
-                    <a className="nav-link active" href="#">Create a Wash List</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Find a Wash List</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Wash from Any Website</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link " href="#" >Baby Wish List</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link " href="#" >Discover your Style</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link " href="#" >Explore Showroom</a>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-6 ">
-                <h5 className="fw-bold"> Your Account</h5>
-                <ul className="nav flex-column">
-                  <li className="nav-item">
-                    <a className="nav-link active" href="#">Your Account</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Your Order</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">your Wish List</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link " href="#" >your Recommendation</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link active" href="#">Your prime Membership</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Your Prime video</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">you Subscribe &amp; save Item</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link " href="#" >Membership &amp; Subscription</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Your Amazon Buisnes Account</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">your Seller Account</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link d" href="#" >Manage your content and Devices</a>
-                  </li>
-                </ul></div>
-            </div>
-          </Modal.Body>
-
-        </Modal>
-        <Modal className=" a_ht_countrydd" show={this.state.showFlagModal} onHide={handleClose3} animation={false}>
-          <Modal.Header closeButton>
-            <div className="form-check">
-              <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
-              <label className="form-check-label" for="flexRadioDefault2">
-                Default checked radio
-              </label>
-            </div>
-          </Modal.Header>
-          <Modal.Body>
-            <div className="form-check">
-              <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-              <label className="form-check-label" for="flexRadioDefault1">
-                Default radio
-              </label>
-            </div>
-            <div className="form-check">
-              <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
-              <label className="form-check-label" for="flexRadioDefault2">
-                Default checked radio
-              </label>
-            </div>
-            <div className="form-check">
-              <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-              <label className="form-check-label" for="flexRadioDefault1">
-                Default radio
-              </label>
-            </div>
-            <div className="form-check">
-              <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
-              <label className="form-check-label" for="flexRadioDefault2">
-                Default checked radio
-              </label>
-            </div>
-          </Modal.Body>
-          <Modal.Footer>
-            <p><Flag code={'in'} className="d-inline-block p-1" height="25" />You are shopping on Amazon.in. </p>
-            <a href="#" className="btn btn-link">Change country/region</a>
-          </Modal.Footer>
-        </Modal>
         <header>
           <div className={' p-1 a_header_top  w-100 ' + this.state.x}>
             <button className=" me-1 ps-0 btn h-100 " style={{ 'width': '9%' }} >
-              <img src="./image/slider/antim6.png" />
+              <img className="img-fluid" src="./image/mainimagae/amz.png" />
             </button>
             <button className=" text-sm-start lh-2 text-white p-1 me-2 btn w-10 h-100" style={{ 'width': '13%' }}>
               <div className=" ms-3" >Hello</div>
               <div className="fw-bold">
                 <FontAwesomeIcon className="me-1" icon={faMapMarkerAlt} />select your address</div>
             </button>
-            <form className=" me-1 bg-white hform   h-50 d-inline-block " style={{ 'width': '46%' }}>c</form>
-            <button onMouseOver={handleShow3} className="me -1 btn  h-100 text-white d-inline-block p-0 " data-bs-toggle="modal" data-bs-target="#staticBackdrop2" style={{ 'width': '5%' }}><Flag code={'in'} className="d-inline-block p-1" height="25" /><FontAwesomeIcon className="d-inline-block" icon={faChevronDown} /></button>
+            <form className={'me-1 bg-white hform d-inline-block ' + this.state.z}>
+              <div className="row m-0 ">
+                <div className="col-1 p-0 border-end">
+                  <div className="dropdown  p-0">
+                    <button className="btn w-100 dropdown-toggle " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      All
+                    </button>
+                  </div>
+                </div>
+                <div className="col-10 p-0 ">
+                  <input onBlur={this.formHandle} onFocus={this.formHandle} className="form-control" />
+                </div>
+                <div className="col-1  bg-warning pt-2"> <FontAwesomeIcon icon={faSearch} /></div>
+              </div>
+            </form>
+            <button onMouseOut={this.hideovery} onMouseOver={this.overylay} className=" a_ht_countrydd_btn me -1 btn  h-100 text-white d-inline-block  position-reletive p-0 " data-bs-toggle="modal" data-bs-target="#staticBackdrop2" style={{ 'width': '5%' }}>
+              <Flag code={'in'} className="d-inline-block p-1" height="25" />
+              <FontAwesomeIcon className="d-inline-block" icon={faChevronDown} />
+              <div className="  text-start text-dark p-3 a_ht_countrydd bg-white rounded-3 boreder position-absolute ">
+                <div className="arrow-up arrow-up_country position-absolute"></div>
+                <form>
+                  <div className="form-check  mb-3 mt-1 ">
+                    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                    <label className="form-check-label" for="flexRadioDefault1">
+                      Default radio
+                    </label>
+                  </div>
+                  <hr />
+                  <div className="form-check  mb-2">
+                    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
+                    <label className="form-check-label" for="flexRadioDefault2">
+                      Default checked radio
+                    </label>
+                  </div>
+                  <div className="form-check  mb-2">
+                    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                    <label className="form-check-label" for="flexRadioDefault1">
+                      Default radio
+                    </label>
+                  </div>
+                  <div className="form-check  mb-2">
+                    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
+                    <label className="form-check-label" for="flexRadioDefault2">
+                      Default checked radio
+                    </label>
+                  </div>
+                  <hr />
+                  <div>
+                    <p><Flag code={'in'} className="d-inline-block p-1 " height="25" /><span className="text-dark">You are shopping on Amazon.in. </span></p>
+                    <a href="#" className="btn btn-link">Change country/region</a>
+                  </div>
+                </form>
+              </div>
 
-            <button onMouseOver={handleShow} className=" me-1 btn  h-100 text-white " style={{ 'width': '12%' }} data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Hello,Sign in
-              <div className="fw-bold"><div className="d-inline-block">Account &amp; list</div> <FontAwesomeIcon className="d-inline-block" icon={faChevronDown} /></div>
+            </button>
+            <button onMouseOut={this.hideovery} onMouseOver={this.overylay} className=" a_ht_singin_modal_btn me-1 btn  h-100 text-white position-reletive " style={{ 'width': '12%' }} >
+              Hello,Sign in
+              <div className="fw-bold">
+                <div className="d-inline-block">
+                  Account &amp; list</div>
+                <FontAwesomeIcon className="d-inline-block ms-1" icon={faChevronDown} />
+              </div>
+              <div className="a_ht_singin_modal position-absolute ">
+                <div className="arrow-up arrow-up_sing position-absolute "></div>
+                <div className=" a_singin_modal border-bottom ">
+                  <button type="button" className="btn btn-warning w-50 mt-2">Sign in</button>
+                  <p className="text-dark">New customer? <a href="#" className="btn btn-link">Start here.</a></p>
+                </div>
+                <div className="row">
+                  <div className="col-6 p-3 ">
+                    <h5 className="fw-bold top-0 text-dark"> Your Lists</h5>
+                    <ul className="nav flex-column">
+                      <li className="nav-item">
+                        <a className="nav-link active" href="#">Create a Wash List</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">Find a Wash List</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">Wash from Any Website</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link " href="#" >Baby Wish List</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link " href="#" >Discover your Style</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link " href="#" >Explore Showroom</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="col-6 p-3 ">
+                    <h5 className="fw-bold text-dark"> Your Account</h5>
+                    <ul className="nav flex-column">
+                      <li className="nav-item">
+                        <a className="nav-link active" href="#">Your Account</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">Your Order</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">your Wish List</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link " href="#" >your Recommendation</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link active" href="#">Your prime Membership</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">Your Prime video</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">you Subscribe &amp; save Item</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link " href="#" >Membership &amp; Subscription</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">Your Amazon Buisnes Account</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">your Seller Account</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link d" href="#" >Manage your content and Devices</a>
+                      </li>
+                    </ul></div>
+                </div>
+              </div>
             </button>
             <button className="me-1 btn  h-100 text-white fs-6 " style={{ 'width': '7%' }}>Return
               <div className="fw-bold">&amp; Order</div>
-
             </button>
             <button className=" btn  h-100 text-white fw-bold" style={{ 'width': '6%' }}><FontAwesomeIcon className="fs-2" icon={faCartPlus} />Cart</button>
           </div>
-          <div className=" a_header_bottom w-100" >
+          <div className=" a_header_bottom w-100 " >
             <ul className=" mt-1   nav float-start">
               <li className=" m-0  nav-item">
                 <button onMouseOver={handleShow2} type="button" className="m-1 p-0 btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop" > <a className=" p-0 fw-bold fs-6 nav-link" href="#"><FontAwesomeIcon className="me-1" icon={faBars} />All</a></button>
@@ -322,12 +346,11 @@ class Header extends Component {
               </li>
               <li className="nav-item position-reletive">
                 <a onMouseOut={this.hideovery} onMouseOver={this.overylay} className="nav-link prime " href="#" >prime<FontAwesomeIcon icon={faCaretDown} /></a>
-             <div className="primebox position-absolute rounded-1 p-3  d-none">
-               <div className ="arrow-up position-absolute ">
-                 
-               </div>
-               <img className="img-fluid" src="../image/mainimagae/prime.jpg"/>
-               </div>
+                <div className="primebox position-absolute rounded-1 p-3  d-none">
+                  <div className="arrow-up arrow-up_prime position-absolute ">
+                  </div>
+                  <img className="img-fluid" src="../image/mainimagae/prime.jpg" />
+                </div>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">Electronic</a>
