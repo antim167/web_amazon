@@ -13,16 +13,13 @@ class SignIn
   render() {
     return (
       <>
-
-        <div className="row justify-content-center">
-          <div className="col-4  ">
-            <a href="#" className="mx-auto d-block  signinforcont position-reletive mt-3 ">
-              <div className="  ccName position-absolute mx-auto spitesheet tbdr"></div>
-              <div className="">.in</div>
-             </a>
-          
-            <div className="border p-7 singacol">
-              <form className="p-4">
+        <div className="row justify-content-center signinforcont">
+          <div className="col-4">
+            <a href="#" className="mx-auto d-block position-relative  alogo spritesheet sprt_pos mt-3 mb-2">
+              <div className="ccName spritesheet position-absolute"></div>
+            </a>
+            <div className="border p-4 a_anch_dec">
+              <form className="">
                 <h2>Sign-In</h2>
                 <div className="mb-3">
                   <label for="mobno" className="form-label">Email address</label>
@@ -39,7 +36,7 @@ class SignIn
           </div>
         </div>
         <hr />
-        <ul className="nav justify-content-center singacol">
+        <ul className="nav justify-content-center a_anch_dec">
           <li className="nav-item">
             <a className="nav-link " href="#"> Conditions of Use </a>
           </li>
@@ -55,8 +52,5 @@ class SignIn
     )
   }
 }
-
-
-SignIn
-  .propTypes = {}
+SignIn.propTypes = {}
 export default SignIn

@@ -131,14 +131,17 @@ class Home extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-3 p-0  ">
-                                <div className="a_mainbox_1 p-3 tbdr">
-                                <div className="a_mainbox_1_inner h-100 w-100 tbdr">
-                                    <div className="m-3 tbdr">
-                                    <h4>Sign in for your best experience</h4>
-                                    <button className="btn btn-warning border w-100"> sign in securely</button>
-                                    </div>
-                                    </div>
+                                <div className="col-3 p-0 p-3 ">
+                                    <div className="a_mainbox_1 p-3 ">
+                                        <div className="a_mainbox_1_inner h-100 w-100 ">
+                                            <div className="m-3 ">
+                                                <div className="a_mainbox_1_singbox ">
+                                                    <h4>Sign in for your best experience</h4>
+                                                    <button className="btn btn-warning border w-100"> sign in securely</button>
+                                                </div>
+                                                <div> <a href="#" className="btn mt-3  p-0"><img className=" img-fluid" src="./image/mainimagae/9.jpg" /></a></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

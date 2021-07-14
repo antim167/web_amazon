@@ -38,7 +38,7 @@ class Detail extends Component {
       <Layout>
         <div className="a_main a_dtl_main  mx-auto tbdr">
           <div className="a_dtl_top_banner tbdr"></div>
-          <div className="row  m-0 a_dtl_prodCon">
+          <div className="row  m-0 a_anch_dec">
             <div className="col-9 p-0 tbdr">
               <div className="row m-0 ">
                 <div className="col-1 p-0 tbdr ">
@@ -169,11 +169,11 @@ class Detail extends Component {
                           <option value="3">3</option>
                         </select>
                       </div>
-                      <button type="button" className="btn  border rounded-pill d-block w-100  bg-warning  mt-2 mb-2">
+                      <button type="button" className="btn amznbtn border rounded-pill d-block w-100 mt-2 mb-2">
                         <FontAwesomeIcon className="mt-1  float-start" icon={faCartPlus} />
                         ADD TO CART
                       </button>
-                      <button type="button" className="btn  border rounded-pill d-block w-100   bg-warning mt-2 mb-2">
+                      <button type="button" className="btn amznbtn  border rounded-pill d-block w-100  mt-2 mb-2">
                         <FontAwesomeIcon className=" mt-1 float-start" icon={faPlay} />
                         BUY NOW
                       </button>

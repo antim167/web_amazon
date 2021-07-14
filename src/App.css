@@ -232,6 +232,9 @@ font-size: 12px;
 .a_mainbox_1_inner a{
   text-decoration: none;
 }
+.a_mainbox_1_singbox{
+  height: 115px;
+}
 .a_main_bot_2{
   height:423px;
 }
@@ -391,13 +394,7 @@ background-color:#232f3e;
 .a_dtl_prodCon{
   height: 1720px;
 }
-.a_dtl_prodCon a{
-text-decoration: none;
-}
-.a_dtl_prodCon a:hover{
-  text-decoration:underline;
-  color:orangered
-  }
+
   .a_price_clr{
     color: orangered;
   }
@@ -428,23 +425,106 @@ text-decoration: none;
   background-image: -webkit-linear-gradient(top ,#ffffcc 0% , #ffcc99 10%,#ffcc66 50%);
 
 }
-.signinforcont {
+.signinforcont a.alogo {
   width: 110px;
-  height: 47px;
+  height: 42px;
+  line-height: 41px;
   text-align: center !important;
+
 }
 .ccName{
-  width: 109px;
-  height:40px;
+  width: 20px;
+  height:20px;
+  top: 8px;
+  right: -21px;
+  background-position: 173px 548px  !important;
 }
-.spitesheet{
-  background: url('https://m.media-amazon.com/images/S/sash/mPGmT0r6IeTyIee.png');
-  background-position: px -123px;
+.spritesheet{
+  background: url('https://m.media-amazon.com/images/S/sash/mPGmT0r6IeTyIee.png'); 
+ 
 }
-.singacol a{
+.sprt_pos{
+  background-position: -2px -122px
+}
+.a_anch_dec a{
   text-decoration: none;
 }
-.singacol a:hover{
-  color:#ff9900;
+.a_anch_dec a:hover{
+  color:#ff9900 !important;
   text-decoration:underline;
 }
+/* *******************singin end******* */
+/* *******************search sTART******* */
+.a_srch_main{
+ 
+}
+.a_srch_main_1{
+  height: 47px;
+}
+.a_srch_main_2{
+height: 2000px;
+}
+.a_srch_main_1_anch{
+  text-decoration: none !important;
+}
+.a_spritsheet_con{
+  width:98px ;
+  height:20px ;
+
+}
+.a_srch_sprsht{
+  background: url('https://m.media-amazon.com/images/S/sash/3-fm1Jbg4IHlyhq.png') ; 
+}
+.a_5star{
+background-position: -98px -110px
+}
+.a_4star{
+  background-position: -2px -86px;
+  }
+  .a_4_5star{
+    background-position: -2px -86px;
+    }
+ .a_3star{
+  background-position: -293px -183px
+   }
+   .a_3_5star{
+    background-position: -195px -159px
+     }
+   
+  .a_2star{
+  background-position: -99px -134px;
+  }
+  .a_2_5star{
+    background-position: -2px -110px;
+    }
+  .a_1star{
+    background-position:-389px -230px;
+    }
+  .a_1_5star{
+    background-position: -292px -207px;
+  }
+  .arrow_con{
+    width: 12px;
+    height:16px;
+    top:0px;
+    right:-13px;
+  }
+  .a_dwn_arrow{
+    background-position:-6px -54px; 
+  }
+  .glob_rating{
+    right: 585px;
+    top: -1px
+  }
+  .srch_prime_box{
+    width:55px;
+    height: 19px;
+  }
+  .prime_pos{
+    background-position:-6px -489px;
+  }
+  .prm_text{
+    top: -4px;
+    right: 498px;
+  }
+/* *******************search end******* */
