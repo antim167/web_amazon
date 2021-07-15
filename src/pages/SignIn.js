@@ -22,7 +22,7 @@ class SignIn
               <form className="">
                 <h2>Sign-In</h2>
                 <div className="mb-3">
-                  <label for="mobno" className="form-label">Email address</label>
+                  <label for="mobno" className="form-label fw-bold">Email or mobile phone number</label>
                   <input type="email" className="form-control" id="mobno" placeholder="" />
                 </div>
                 <button className="btn amznbtn w-100 mb-3"> continue</button>

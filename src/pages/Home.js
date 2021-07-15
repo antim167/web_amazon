@@ -131,18 +131,19 @@ class Home extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-3 p-0 p-3 ">
-                                    <div className="a_mainbox_1 p-3 ">
+                                <div className="col-3 p-0  ">
+                                    <div className="a_mainbox_1  a_mainbox_1_singbox mt-3 me-2 ">
                                         <div className="a_mainbox_1_inner h-100 w-100 ">
-                                            <div className="m-3 ">
-                                                <div className="a_mainbox_1_singbox ">
+                                            <div className=" ">
+                                                <div className=" p-3">
                                                     <h4>Sign in for your best experience</h4>
-                                                    <button className="btn btn-warning border w-100"> sign in securely</button>
+                                                    <button className="btn btn-warning border rounded-3 w-100"> sign in securely</button>
                                                 </div>
-                                                <div> <a href="#" className="btn mt-3  p-0"><img className=" img-fluid" src="./image/mainimagae/9.jpg" /></a></div>
+
                                             </div>
                                         </div>
                                     </div>
+                                    <div> <a href="#" className="btn mt-3  p-0"><img className=" img-fluid" src="./image/mainimagae/44.jpg" /></a></div>
                                 </div>
                             </div>
                             <div className="a_main_bot_2 row m-0 mb-3">
@@ -235,16 +236,17 @@ class Home extends Component {
                                 <Carousel className="carouselExampleControls2 tbdr">
                                     <Carousel.Item>
                                         <div className="imgcont row">
-                                            <div className="col p-0 tbdr">
+                                            <div className="col ps-5 tbdr">
+                                                <img className=" " src="./image/mainimagae/45.jpg" />
                                                 <div></div>
                                                 <div></div>
                                                 <div></div>
                                             </div>
-                                            <div className="col p-0 tbdr">1</div>
-                                            <div className="col p-0 tbdr">1</div>
-                                            <div className="col p-0 tbdr">1</div>
-                                            <div className="col p-0 tbdr">1</div>
-                                            <div className="col p-0 tbdr">1</div>
+                                            <div className="col p-0 tbdr"><img className=" " src="./image/mainimagae/46.jpg" /></div>
+                                            <div className="col ps-5 tbdr"><img className=" " src="./image/mainimagae/48.jpg" /></div>
+                                            <div className="col p-0 tbdr"><img className=" " src="./image/mainimagae/47.jpg" /></div>
+                                            <div className="col p-0 tbdr"><img className=" " src="./image/mainimagae/49.jpg" /></div>
+                                            <div className="col p-0 tbdr"><img className=" " src="./image/mainimagae/50.jpg" /></div>
                                         </div>
                                     </Carousel.Item>
                                     <Carousel.Item>

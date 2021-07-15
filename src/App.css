@@ -233,7 +233,8 @@ font-size: 12px;
   text-decoration: none;
 }
 .a_mainbox_1_singbox{
-  height: 115px;
+  height: 120px;
+  width: 298px !important;
 }
 .a_main_bot_2{
   height:423px;
@@ -450,10 +451,15 @@ background-color:#232f3e;
   text-decoration: none;
 }
 .a_anch_dec a:hover{
-  color:#ff9900 !important;
+  color:#C7511F !important;
   text-decoration:underline;
 }
-/* *******************singin end******* */
+.a_anch a:hover{
+  text-decoration: none;
+}
+/* *******************register end******* */
+
+/* *******************register end******* */
 /* *******************search sTART******* */
 .a_srch_main{
  
@@ -526,5 +532,9 @@ background-position: -98px -110px
   .prm_text{
     top: -4px;
     right: 498px;
+  }
+  .a_aside_star{
+    height: 20px;
+    width: 98px;
   }
 /* *******************search end******* */
