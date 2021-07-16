@@ -512,16 +512,12 @@ background-position: -98px -110px
   .arrow_con{
     width: 12px;
     height:16px;
-    top:0px;
-    right:-13px;
+    
   }
   .a_dwn_arrow{
     background-position:-6px -54px; 
   }
-  .glob_rating{
-    right: 585px;
-    top: -1px
-  }
+  
   .srch_prime_box{
     width:55px;
     height: 19px;
@@ -529,9 +525,12 @@ background-position: -98px -110px
   .prime_pos{
     background-position:-6px -489px;
   }
-  .prm_text{
-    top: -4px;
-    right: 498px;
+  .a_search_filtertop a:hover{
+    border:1px solid #000 !important;
+    color: orangered !important;;
+  }
+  .a_search_filtertop a{
+    border-radius: 10px !important;
   }
   .a_aside_star{
     height: 20px;
