@@ -168,7 +168,7 @@ class Search extends Component {
               </div>
             </div>
             <div className="col-9 tbdr ">
-            <div className="">
+              <div className="">
                 <ul className="nav float-end ">
                   <li className="nav-item">
                     <a className="nav-link text-dark  " href="#" onClick={this.showGridView}>
@@ -185,14 +185,20 @@ class Search extends Component {
               <div className="a_search_filtertop border-bottom">
                 <h2>filter by price</h2>
                 <ul className="nav float start">
-                  <li className="nav-item">
+                  <li className="nav-item m-3">
                     <a className="nav-link btn btn-light border text-dark " href="#">under $ 20,000</a>
                   </li>
-                 
+                  <li className="nav-item m-3">
+                    <a className="nav-link btn btn-light border text-dark " href="#">under $ 20,000</a>
+                  </li>
+                  <li className="nav-item m-3">
+                    <a className="nav-link btn btn-light border text-dark " href="#">under $ 20,000</a>
+                  </li>
+                  <li className="nav-item m-3">
+                    <a className="nav-link btn btn-light border text-dark " href="#">under $ 20,000</a>
+                  </li>
                 </ul>
-                </div>
-              
-
+              </div>
               <div className={'row m-0 mt-5 border-bottom w-' + this.state.view.r}>
                 <div className={'col-' + this.state.view.col1}>
                   <a href="#"><img className=" img-fluid" src="./image/mainimagae/srchlap.jpg" /></a>

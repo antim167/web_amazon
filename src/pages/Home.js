@@ -15,10 +15,11 @@ class Home extends Component {
             <Layout>
 
                 <React.Fragment>
-                    <div className="a_main  ">
-                        <div className="a_main_top  position-relative ">
+                    <div className="a_main positin-relative ">
+                        <div className="a_main_top  ">
                             <Carousel>
                                 <Carousel.Item>
+                                    <div className="  start-0 top-0 position-absolute olay w-100 h-100"></div>
                                     <img
                                         className="d-block "
                                         src="./image/slider/3.jpg"
@@ -26,6 +27,7 @@ class Home extends Component {
                                     />
                                 </Carousel.Item>
                                 <Carousel.Item>
+                                    <div className="  start-0 top-0 position-absolute olay w-100 h-100"></div>
                                     <img
                                         className="d-block "
                                         src="./image/slider/2.jpg"
@@ -33,12 +35,14 @@ class Home extends Component {
                                     />
                                 </Carousel.Item>
                                 <Carousel.Item>
+                                    <div className="  start-0 top-0 position-absolute olay w-100 h-100"></div>
                                     <img
                                         className="d-block "
                                         src="./image/slider/7.jpg"
                                         alt="Third slide"
                                     />
                                     <Carousel.Item>
+                                        <div className="  start-0 top-0 position-absolute olay w-100 h-100"></div>
                                         <img
                                             className="d-block "
                                             src="./image/slider/4.jpg"
@@ -47,6 +51,7 @@ class Home extends Component {
                                     </Carousel.Item>
                                 </Carousel.Item>
                                 <Carousel.Item>
+                                    <div className="  start-0 top-0 position-absolute olay w-100 h-100"></div>
                                     <img
                                         className="d-block "
                                         src="./image/slider/5.jpg"
@@ -54,6 +59,7 @@ class Home extends Component {
                                     />
                                 </Carousel.Item>
                                 <Carousel.Item>
+                                    <div className="  start-0 top-0 position-absolute olay w-100 h-100"></div>
                                     <img
                                         className="d-block "
                                         src="./image/slider/6.jpg"
@@ -61,6 +67,7 @@ class Home extends Component {
                                     />
                                 </Carousel.Item>
                                 <Carousel.Item>
+                                    <div className="  start-0 top-0 position-absolute olay w-100 h-100"></div>
                                     <img
                                         className="d-block "
                                         src="./image/slider/1.jpg"
@@ -69,7 +76,7 @@ class Home extends Component {
                                 </Carousel.Item>
                             </Carousel>
                         </div>
-                        <div className=" ml-1 position-absolute  a_main_bot ">
+                        <div className=" ml-1  position-absolute  a_main_bot ">
                             <div className="a_main_bot_1 row m-0 mb-3">
                                 <div className="col-3 p-3 ">
                                     <div className="a_mainbox_1 p-3">

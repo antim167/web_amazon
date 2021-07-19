@@ -23,9 +23,8 @@ html,body{
 class Header extends Component {
   //1.property
   state = {
-    x: '',
-    y: ' l934',
-
+    AllNavMenubtnn: 'd-none',
+    AllNavMenu: 'l365',
     showSingModal: false,
     showAllModal: false,
     overylay: 'a_invisible',
@@ -38,6 +37,12 @@ class Header extends Component {
   }
   //3.method
   //create only fat arrow fun
+  showAllNavMenu = () => {
+    this.setState({ AllNavMenu: 'l0', AllNavMenubtnn: 'd-block', overylay: 'a_visible' })
+  }
+  handlNavbtn = () => {
+    this.setState({ AllNavMenu: 'l365', AllNavMenubtnn: 'd-none', overylay: 'a_invisible' })
+  }
   handleScroll = () => {
     console.log("ok" + window.scrollY);
     if (window.scrollY > 90) {
@@ -72,9 +77,7 @@ class Header extends Component {
     }
   }
   render() {
-
-
-    const handleShow = () => {
+const handleShow = () => {
       this.setState({ showSingModa: true });
     }
     const handleClose = () => {
@@ -100,12 +103,13 @@ class Header extends Component {
           {myCustomFont}
         </style>
         <div className={'overylay w-100 h-100 ' + this.state.overylay}></div>
-        <Modal className=" handalmodal" show={this.state.showAllModal} onHide={handleClose2} animation={false}>
-          <Modal.Header className="mhcolor text-white" closeButton>
+
+        <button onClick={this.handlNavbtn} className={' btn btn-close AllNavMenubtn position-fixed border text-white border top-0 ' + this.state.AllNavMenubtnn}>x</button>
+        <div className={'AllNavMenu h-100 position-fixed ' + this.state.AllNavMenu}>
+          <div className="mhcolor text-white p-3" >
             <h5 className="modal-title" id="staticBackdropLabel"><FontAwesomeIcon icon={faUser} /> Hello, Sign in</h5>
-            <button onClick={this.closemodal} type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </Modal.Header>
-          <Modal.Body>
+          </div>
+          <div className="overflow-scroll navmenuheight ">
             <h5 className="fw-bolder ps-4">Trending</h5>
             <ul className="nav flex-column mhul border-bottom pt-1 mb-2">
               <li className="nav-item">
@@ -183,18 +187,22 @@ class Header extends Component {
                 <a className="nav-link" href="#">Sing In</a>
               </li>
             </ul>
-          </Modal.Body>
+          </div>
+        </div>
 
-        </Modal>
         <header>
-          <div className={' p-1 a_header_top  w-100 ' + this.state.x}>
-            <button className=" me-1 ps-0 btn h-100 " style={{ 'width': '9%' }} >
-              <img className="img-fluid" src="./image/mainimagae/amz.png" />
+
+          <div className={'p-2 a_header_top  w-100 ' + this.state.x}>
+            <button className="  ps-0 btn h-100 me-1" style={{ 'width': '10%' }}  >
+              <span className=" ms-0 p-0 d-block float-start h_amz_con home_spritesheet  h_amazon_pos tbdr" ></span>
+              <span className="text-white mt-3 float-start">.in</span>
             </button>
-            <button className=" text-sm-start lh-2 text-white p-1 me-2 btn w-10 h-100" style={{ 'width': '13%' }}>
+            <button className=" text-sm-start lh-2 text-white p-0 me-2 btn w-10 h-100" style={{ 'width': '13%' }}>
               <div className=" ms-3" >Hello</div>
-              <div className="fw-bold">
-                <FontAwesomeIcon className="me-1" icon={faMapMarkerAlt} />select your address</div>
+              <a className="fw-bold">
+                <span className=" ms-0 p-0 d-block float-start h_loc_con home_spritesheet h_loc_pos" ></span>
+                <span className="text-white float-start">Select your address</span>
+              </a>
             </button>
             <form className={'me-1 bg-white hform d-inline-block ' + this.state.z}>
               <div className="row m-0 ">
@@ -251,7 +259,7 @@ class Header extends Component {
               </div>
 
             </button>
-            <button onMouseOut={this.hideovery} onMouseOver={this.overylay} className=" a_ht_singin_modal_btn me-1 btn  h-100 text-white position-reletive " style={{ 'width': '12%' }} >
+            <button onMouseOut={this.hideovery} onMouseOver={this.overylay} className=" a_ht_singin_modal_btn me-1 btn  h-100 text-white position-reletive " style={{ 'width': '11%' }} >
               Hello,Sign in
               <div className="fw-bold">
                 <div className="d-inline-block">
@@ -334,42 +342,48 @@ class Header extends Component {
             <button className=" btn  h-100 text-white fw-bold" style={{ 'width': '6%' }}><FontAwesomeIcon className="fs-2" icon={faCartPlus} />Cart</button>
           </div>
           <div className=" a_header_bottom w-100 " >
-            <ul className=" mt-1   nav float-start">
-              <li className=" m-0  nav-item">
-                <button onMouseOver={handleShow2} type="button" className="m-1 p-0 btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop" > <a className=" p-0 fw-bold fs-6 nav-link" href="#"><FontAwesomeIcon className="me-1" icon={faBars} />All</a></button>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">Best Seller</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">Mobiles</a>
-              </li>
-              <li className="nav-item position-reletive">
-                <a onMouseOut={this.hideovery} onMouseOver={this.overylay} className="nav-link prime " href="#" >prime<FontAwesomeIcon icon={faCaretDown} /></a>
-                <div className="primebox position-absolute rounded-1 p-3  d-none">
-                  <div className="arrow-up arrow-up_prime position-absolute ">
-                  </div>
-                  <img className="img-fluid" src="../image/mainimagae/prime.jpg" />
-                </div>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">Electronic</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">Fashion</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">New Relese</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">Customer Services</a>
-              </li>
-            </ul>
-            <ul className=" img-fluid mt-1 p-0  float-end ">
-              <a className=" m-0 p-0 hbenner">
-                <img src="./image/slider/headernenner_.jpg" />
-              </a>
-            </ul>
+            <div className="row m-0">
+              <div className="col-8 p-0">
+                <ul className=" mt-1   nav float-start">
+                  <li className=" m-0  nav-item">
+                    <button onMouseOver={this.showAllNavMenu} type="button" className="m-1 p-0 btn" > <a className=" p-0 fw-bold fs-6 nav-link" href="#"><FontAwesomeIcon className="me-1" icon={faBars} />All</a></button>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Best Seller</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Mobiles</a>
+                  </li>
+                  <li className="nav-item position-reletive">
+                    <a onMouseOut={this.hideovery} onMouseOver={this.overylay} className="nav-link prime " href="#" >Prime<FontAwesomeIcon icon={faCaretDown} /></a>
+                    <div className="primebox position-absolute rounded-1 p-3  d-none">
+                      <div className="arrow-up arrow-up_prime position-absolute ">
+                      </div>
+                      <img className="img-fluid" src="../image/mainimagae/prime.jpg" />
+                    </div>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Electronic</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Fashion</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">New Relese</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Customer Services</a>
+                  </li>
+                </ul>
+              </div>
+              <div className="col-4  p-0">
+                <ul className=" img-fluid m-0 p-0">
+                  <a className=" m-0 p-0 hbenner">
+                    <img src="./image/slider/headernenner_.jpg" />
+                  </a>
+                </ul>
+              </div>
+            </div>
           </div>
         </header>
 
