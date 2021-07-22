@@ -14,6 +14,7 @@ import SingIn from './pages/SignIn';
 import Register from './pages/Register';
 import Cart from './pages/Cart';
 import Delivery from './pages/Delivery';
+import OrderHistory from './pages/OrderHistory';
 /**
 * @author
 * @class App
@@ -38,6 +39,7 @@ class App extends Component {
         <Route path="/register" component={Register}></Route>
         <Route path="/cart" component={Cart}></Route>
         <Route path="/delivery" component={Delivery}></Route>
+        <Route path="/orderhistory" component={OrderHistory}></Route>
       </Router>
     );
   }

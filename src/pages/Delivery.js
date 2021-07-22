@@ -13,17 +13,35 @@ class Delivery extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className="container p-0  delivery">
+                <div className="container a_anch_dec  p-0  delivery">
                     <header className=" d-flex align-items-center">
                         <img className="" src="https://images-eu.ssl-images-amazon.com/images/G/31/x-locale/checkout/checkout-spc-address-banner._CB485947649_.gif" />
                     </header>
-                    <div className="a_deli_main pt-3 border-top pb-5">
-                        <div className="pb-5">
+                    <div className="a_deli_main pt-3 border-top pb-4">
+                        <div className=" pb-3">
                             <h3>Select a delivery address</h3>
-                            <p className="a_deli_fs">Enter the name and address you'd like your order to be delivered to. Please indicate also whether your invoice address is the same as the delivery address entered. When finished, click the "Continue" button.  Or, if you're sending items to more than one address, click the "Add another address" button to enter additional addresses.</p>
+                            <p className="a_deli_fs d-none">Enter the name and address you'd like your order to be delivered to. Please indicate also whether your invoice address is the same as the delivery address entered. When finished, click the "Continue" button.  Or, if you're sending items to more than one address, click the "Add another address" button to enter additional addresses.</p>
+                            <p className="a_deli_fs">Is the address you'd like to use displayed below? If so, click the corresponding "Deliver to this address" button. Or you can <a href="#">enter a new delivery address.</a> </p>
                         </div>
-
-                        <h5 className="pt-3 pb-2 border-top">Add a new address</h5>
+                        <form>
+                        <div className="row border-top ">
+                            <div className=" col-3 mt-3 a_fs">
+                                <span className="d-block fw-bold">Antim songara</span>
+                                <span className="d-block">41</span>
+                                <span className="d-block">pragati nagar</span>
+                                <span className="d-block">NEEMUCH, MADHYA PRADESH 458441</span>
+                                <span className="d-block">India</span>
+                                <a href="#" >Add delivery instructions</a>
+                                <button className="btn amznbtn w-100 btn-sm mt-2 mb-2 ">Deliver to this address</button>
+                                <div className="row mb-4">
+                                    <div className="col p-1"><button className="btn btn-light border btn-sm w-100"> Edit</button></div>
+                                    <div className="col p-1"><button className="btn btn-light border btn-sm w-100"> Delete</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        </form>
+                        <div className="a_deli_gard"></div>
+                        <h4 className="  pb-2">Add a new address</h4>
                         <div className="row  m-0">
                             <div className="col-6">
                                 <form >
@@ -32,7 +50,6 @@ class Delivery extends Component {
                                         <select className="form-select form-select-sm" >
                                             <option selected>india</option>
                                             <option value="india">india</option>
-
                                         </select>
                                     </div>
                                     <div className="mb-3">
@@ -75,7 +92,6 @@ class Delivery extends Component {
                                                     <option value="mp">mp</option>
                                                     <option value="mp">mp</option>
                                                     <option value="mp">mp</option>
-
                                                 </select>
                                             </div>
                                         </div>
@@ -98,17 +114,19 @@ class Delivery extends Component {
                                             <option value="mp">mp</option>
                                         </select>
                                     </div>
-                                    <button className="btn amznbtn " >Use this address</button>
+                                    <button className="btn amznbtn "type="submit" >Use this address</button>
                                 </form>
-
                             </div>
                         </div>
+                        
                     </div>
-                    <footer className="border pt-3 a_deli_fs">
+                    <footer className=" pt-3 a_fs">
+                    <div className="a_deli_gard"></div>
                         <div className="   d-flex justify-content-center a_anch_dec">
                             <a href="#" className="border-end pe-1 ">Conditions of Use </a>
                             <a href="#" className="ps-1 "> Privacy Notice </a>
                             <span>© 2012-2020, Amazon.com, Inc. and its affiliates</span>
+
                         </div>
                     </footer>
                 </div>

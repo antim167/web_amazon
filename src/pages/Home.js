@@ -17,7 +17,7 @@ class Home extends Component {
                 <React.Fragment>
                     <div className="a_main positin-relative ">
                         <div className="a_main_top  ">
-                            <Carousel>
+                            <Carousel >
                                 <Carousel.Item>
                                     <div className="  start-0 top-0 position-absolute olay w-100 h-100"></div>
                                     <img

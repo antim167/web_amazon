@@ -120,7 +120,7 @@ class Detail extends Component {
               </div>
 
             </div>
-            <div className="col-3 ps-4 pe-4 border">
+            <div className=" detail_accord col-3 ps-4 pe-4 border">
               <div className="accordion" id="accordionExample">
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="headingOne">
@@ -152,7 +152,7 @@ class Detail extends Component {
                         <input className="form-check-input" type="radio" checked="checked" name="flexRadioDefault" id="flexRadioDefault" />
                         <label className="form-check-label" for="flexRadioDefault1">
                           <div className="fw-bold"> Without exchange</div>
-                          <span className="a_price_clr mt-2 "> Up to ₹ 44,999</span>
+                          <span className="a_price_clr mt-2 "> Up to  ₹44,999</span>
                           <span> ₹<span className="text-decoration-line-through"> 51,000.00</span></span>
 
                         </label>

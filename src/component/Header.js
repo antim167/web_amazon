@@ -77,7 +77,7 @@ class Header extends Component {
     }
   }
   render() {
-const handleShow = () => {
+    const handleShow = () => {
       this.setState({ showSingModa: true });
     }
     const handleClose = () => {
@@ -104,10 +104,13 @@ const handleShow = () => {
         </style>
         <div className={'overylay w-100 h-100 ' + this.state.overylay}></div>
 
-        <button onClick={this.handlNavbtn} className={' btn btn-close AllNavMenubtn position-fixed border text-white border top-0 ' + this.state.AllNavMenubtnn}>x</button>
+        <button onClick={this.handlNavbtn} className={' btn btn-close AllNavMenubtn position-fixed border-0 text-white border top-0 ' + this.state.AllNavMenubtnn}><span className=" m-0 fs-4 text-dark">x</span></button>
         <div className={'AllNavMenu h-100 position-fixed ' + this.state.AllNavMenu}>
           <div className="mhcolor text-white p-3" >
-            <h5 className="modal-title" id="staticBackdropLabel"><FontAwesomeIcon icon={faUser} /> Hello, Sign in</h5>
+            <h5 className="modal-title" id="staticBackdropLabel">
+              <span className=" d-block float-start a_fausr_con_pos home_spritesheet ms-2 me-2"> </span>
+              Hello sign,in
+            </h5>
           </div>
           <div className="overflow-scroll navmenuheight ">
             <h5 className="fw-bolder ps-4">Trending</h5>
@@ -192,10 +195,10 @@ const handleShow = () => {
 
         <header>
 
-          <div className={'p-2 a_header_top  w-100 ' + this.state.x}>
-            <button className="  ps-0 btn h-100 me-1" style={{ 'width': '10%' }}  >
-              <span className=" ms-0 p-0 d-block float-start h_amz_con home_spritesheet  h_amazon_pos tbdr" ></span>
-              <span className="text-white mt-3 float-start">.in</span>
+          <div className={' a_header_top  w-100 ' + this.state.x}>
+            <button className=" mt-0 ps-0 btn h-100 me-1" style={{ 'width': '10%' }}  >
+              <span className=" ms-0 p-0 d-block float-start h_amz_con home_spritesheet  h_amazon_pos" ></span>
+              <span className="text-white mt-2 pt-1 float-start">.in</span>
             </button>
             <button className=" text-sm-start lh-2 text-white p-0 me-2 btn w-10 h-100" style={{ 'width': '13%' }}>
               <div className=" ms-3" >Hello</div>
@@ -219,9 +222,9 @@ const handleShow = () => {
                 <div className="col-1  bg-warning pt-2"> <FontAwesomeIcon icon={faSearch} /></div>
               </div>
             </form>
-            <button onMouseOut={this.hideovery} onMouseOver={this.overylay} className=" a_ht_countrydd_btn me -1 btn  h-100 text-white d-inline-block  position-reletive p-0 " data-bs-toggle="modal" data-bs-target="#staticBackdrop2" style={{ 'width': '5%' }}>
-              <Flag code={'in'} className="d-inline-block p-1" height="25" />
-              <FontAwesomeIcon className="d-inline-block" icon={faChevronDown} />
+            <button onMouseOut={this.hideovery} onMouseOver={this.overylay} className=" tbdr a_ht_countrydd_btn m-1 btn  h-100 text-white d-inline-block  position-reletive p-0 " data-bs-toggle="modal" data-bs-target="#staticBackdrop2" style={{ 'width': '4%' }}>
+            <span className=" ms-1 d-block float-start  foot_spritesheet  a_flag_pos"></span>
+              <span className="home_spritesheet float-start a_arrow_pos "></span>
               <div className="  text-start text-dark p-3 a_ht_countrydd bg-white rounded-3 boreder position-absolute ">
                 <div className="arrow-up arrow-up_country position-absolute"></div>
                 <form>
@@ -262,10 +265,10 @@ const handleShow = () => {
             <button onMouseOut={this.hideovery} onMouseOver={this.overylay} className=" a_ht_singin_modal_btn me-1 btn  h-100 text-white position-reletive " style={{ 'width': '11%' }} >
               Hello,Sign in
               <div className="fw-bold">
-                <div className="d-inline-block">
+                <div className="float-start">
                   Account &amp; list</div>
-                <FontAwesomeIcon className="d-inline-block ms-1" icon={faChevronDown} />
-              </div>
+             </div>
+             <span className=" d-block home_spritesheet float-start a_arrow_pos "></span>
               <div className="a_ht_singin_modal position-absolute ">
                 <div className="arrow-up arrow-up_sing position-absolute "></div>
                 <div className=" a_singin_modal border-bottom ">
@@ -339,14 +342,17 @@ const handleShow = () => {
             <button className="me-1 btn  h-100 text-white fs-6 " style={{ 'width': '7%' }}>Return
               <div className="fw-bold">&amp; Order</div>
             </button>
-            <button className=" btn  h-100 text-white fw-bold" style={{ 'width': '6%' }}><FontAwesomeIcon className="fs-2" icon={faCartPlus} />Cart</button>
+            <button className=" btn  h-100 text-white fw-bold" style={{ 'width': '7%' }}>
+              <span className="d-block float-start home_spritesheet cart_con_pos"></span>
+              <span className="float-start">cart</span>
+            </button>
           </div>
           <div className=" a_header_bottom w-100 " >
             <div className="row m-0">
               <div className="col-8 p-0">
                 <ul className=" mt-1   nav float-start">
                   <li className=" m-0  nav-item">
-                    <button onMouseOver={this.showAllNavMenu} type="button" className="m-1 p-0 btn" > <a className=" p-0 fw-bold fs-6 nav-link" href="#"><FontAwesomeIcon className="me-1" icon={faBars} />All</a></button>
+                    <button onClick={this.showAllNavMenu} type="button" className="m-1 p-0 btn" > <a className=" p-0 fw-bold fs-6 nav-link" href="#"><FontAwesomeIcon className="me-1" icon={faBars} />All</a></button>
                   </li>
                   <li className="nav-item">
                     <a className="nav-link" href="#">Best Seller</a>
