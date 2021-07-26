@@ -5,7 +5,7 @@ import { faMapMarkerAlt, faBars, faUser, faChevronRight, faCartPlus, faChevronDo
 import { Modal } from 'react-bootstrap';
 import Flag from 'react-world-flags';
 import Ember from '../assets/font/ember/AmazonEmber_Rg.ttf';
-
+import { Link } from 'react-router-dom';
 const myCustomFont = `
 @font-face{
   font-family:'emberRg';
@@ -13,7 +13,8 @@ const myCustomFont = `
 }
 html,body{
   font-family:'emberRg',Arial,sans-serif !important;
-}`;
+}
+`;
 
 /**
 * @author
@@ -181,13 +182,13 @@ class Header extends Component {
             <h5 className="fw-bolder ps-4">Help &amp; Setting</h5>
             <ul className="nav flex-column border-bottom pt-1 mb-2 mhul">
               <li className="nav-item">
-                <a className="nav-link active" href="#">Your Account</a>
+                <Link className="nav-link active" to="/account">Your Account</Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">Customer Services</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Sing In</a>
+                <Link className="nav-link" to="/signin">Sing In</Link>
               </li>
             </ul>
           </div>
@@ -196,14 +197,14 @@ class Header extends Component {
         <header>
 
           <div className={' a_header_top  w-100 ' + this.state.x}>
-            <button className=" mt-0 ps-0 btn h-100 me-1" style={{ 'width': '10%' }}  >
-              <span className=" ms-0 p-0 d-block float-start h_amz_con home_spritesheet  h_amazon_pos" ></span>
-              <span className="text-white mt-2 pt-1 float-start">.in</span>
-            </button>
+            <Link to="/" className=" mt-0 ps-0 btn h-100 me-1" style={{ 'width': '10%' }}  >
+              <span className=" mt-1 ms-0 p-0 d-block float-start h_amz_con home_spritesheet  h_amazon_pos" ></span>
+              <span className="text-white mt-2 pt-2 float-start">.in</span>
+            </Link>
             <button className=" text-sm-start lh-2 text-white p-0 me-2 btn w-10 h-100" style={{ 'width': '13%' }}>
               <div className=" ms-3" >Hello</div>
               <a className="fw-bold">
-                <span className=" ms-0 p-0 d-block float-start h_loc_con home_spritesheet h_loc_pos" ></span>
+                <span className=" ms-0 p-0 d-block float-start h_loc_con_pos home_spritesheet " ></span>
                 <span className="text-white float-start">Select your address</span>
               </a>
             </button>
@@ -272,8 +273,8 @@ class Header extends Component {
               <div className="a_ht_singin_modal position-absolute ">
                 <div className="arrow-up arrow-up_sing position-absolute "></div>
                 <div className=" a_singin_modal border-bottom ">
-                  <button type="button" className="btn btn-warning w-50 mt-2">Sign in</button>
-                  <p className="text-dark">New customer? <a href="#" className="btn btn-link">Start here.</a></p>
+                  <Link to="/signin" type="button" className="btn btn-warning w-50 mt-2">Sign in</Link>
+                  <p className="text-dark">New customer? <Link to="/register" className="btn btn-link">Start here.</Link></p>
                 </div>
                 <div className="row">
                   <div className="col-6 p-3 ">
@@ -303,10 +304,10 @@ class Header extends Component {
                     <h5 className="fw-bold text-dark"> Your Account</h5>
                     <ul className="nav flex-column">
                       <li className="nav-item">
-                        <a className="nav-link active" href="#">Your Account</a>
+                        <Link className="nav-link active" to="/account">Your Account</Link>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#">Your Order</a>
+                        <Link className="nav-link" to="/orderhistory">Your Order</Link>
                       </li>
                       <li className="nav-item">
                         <a className="nav-link" href="#">your Wish List</a>
@@ -342,10 +343,10 @@ class Header extends Component {
             <button className="me-1 btn  h-100 text-white fs-6 " style={{ 'width': '7%' }}>Return
               <div className="fw-bold">&amp; Order</div>
             </button>
-            <button className=" btn  h-100 text-white fw-bold" style={{ 'width': '7%' }}>
-              <span className="d-block float-start home_spritesheet cart_con_pos"></span>
-              <span className="float-start">cart</span>
-            </button>
+            <Link  to="/cart" className=" btn   h-100 text-white fw-bold" style={{ 'width': '7%' }}>
+              <span className=" mt-3 d-block float-start home_spritesheet cart_con_pos"></span>
+              <span className=" mt-3 float-start">cart</span>
+            </Link>
           </div>
           <div className=" a_header_bottom w-100 " >
             <div className="row m-0">

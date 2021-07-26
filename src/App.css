@@ -1,6 +1,9 @@
 .tbdr{
   border:1px solid black;
 }
+.color_gray{
+   color:rgb(218, 211, 211) !important;
+}
 /* ****************Home start*******************8888 */
 .olay{
   background-image: linear-gradient(transparent 20% ,#eaeded 70%);
@@ -152,12 +155,11 @@ height: 18px;
   width:100px;
   height:42px;
 }
-.h_loc_pos{
-  background-position: -70px -376px;
-}
-.h_loc_con{
+
+.h_loc_con_pos{
   width: 21px;
   height:24px;
+  background-position: -70px -376px;
 }
 .overylay{
   background-color:rgba(0, 0,0, 0.6);
@@ -263,8 +265,8 @@ outline: 3px solid white;
 .a_mainbox_1_inner .col-6{
   height:140px;  
 }
-.a_mainbox_1_inner .row a{
-font-size: 12px;
+.a_mainbox_1_inner .row a ,.a_font_size{
+font-size: 14px;
 }
 .a_mainbox_1_inner a{
   text-decoration: none;
@@ -486,7 +488,7 @@ background-color:#232f3e;
 }
 .a_anch_dec a:hover{
   color:#C7511F !important;
-  text-decoration:underline;
+  text-decoration:underline !important;
 }
 /* *******************register end******* */
 /* *******************register end******* */
@@ -618,3 +620,56 @@ color:#131a22 !important;
   --bs-breadcrumb-divider: '>';
 }
 /* *******************order_history end******* */
+/* *******************account start******* */
+
+
+
+.pay_main .accordion-item {
+  background-color: rgb(255, 246, 251) !important;
+  border: none !important;
+}
+.accordion-button:not(.collapsed) {
+color: black !important;
+background-color: rgb(255, 246, 251) !important;
+
+}
+
+.pay_main .imgcon{
+  height: 24px;
+}
+
+.pay_main .bank_sprit{
+  background:url("https://images-eu.ssl-images-amazon.com/images/G/31/payments-portal/r1/issuer-images/sprite-map._CB443317321_.png")
+}
+
+.visa{
+  background-position: 0px;
+ height: 29px;
+    width: 45px;
+}
+.visa2{
+  background-position: 45px !important ;
+  height: 29px;
+    width: 45px;
+}
+.visa3{
+  background-position: -90px !important;
+  height: 29px;
+    width: 45px;
+}
+.visa4{
+  background-position: -135px !important;
+  height: 29px;
+    width: 45px;
+}
+.visa5{
+  background-position: -315px !important;
+  height: 29px;
+    width: 45px;
+}
+.pay_main .accordion-button::after {
+  background-image: none !important;
+  background-color: rgb(255, 246, 251) !important;
+}
+
+/* *******************accouut end******* */
