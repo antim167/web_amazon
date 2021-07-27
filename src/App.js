@@ -18,6 +18,8 @@ import OrderHistory from './pages/OrderHistory';
 import Account from './pages/Account';
 import DeliveryOption from './pages/DeliveryOption';
 import PaymentMeth from './pages/PaymentMeth';
+
+import YourWishList from './pages/YourWishList';
 /**
 * @author
 * @class App
@@ -45,6 +47,7 @@ class App extends Component {
         <Route path="/delivery" component={Delivery}></Route>
         <Route path="/account" component={Account}></Route>
         <Route path="/orderhistory" component={OrderHistory}></Route>
+        <Route path="/yourwishlist" component={YourWishList}></Route>
       </Router>
     );
   }

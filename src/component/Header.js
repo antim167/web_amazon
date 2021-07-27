@@ -224,7 +224,7 @@ class Header extends Component {
               </div>
             </form>
             <button onMouseOut={this.hideovery} onMouseOver={this.overylay} className=" tbdr a_ht_countrydd_btn m-1 btn  h-100 text-white d-inline-block  position-reletive p-0 " data-bs-toggle="modal" data-bs-target="#staticBackdrop2" style={{ 'width': '4%' }}>
-            <span className=" ms-1 d-block float-start  foot_spritesheet  a_flag_pos"></span>
+              <span className=" ms-1 d-block float-start  foot_spritesheet  a_flag_pos"></span>
               <span className="home_spritesheet float-start a_arrow_pos "></span>
               <div className="  text-start text-dark p-3 a_ht_countrydd bg-white rounded-3 boreder position-absolute ">
                 <div className="arrow-up arrow-up_country position-absolute"></div>
@@ -268,8 +268,8 @@ class Header extends Component {
               <div className="fw-bold">
                 <div className="float-start">
                   Account &amp; list</div>
-             </div>
-             <span className=" d-block home_spritesheet float-start a_arrow_pos "></span>
+              </div>
+              <span className=" d-block home_spritesheet float-start a_arrow_pos "></span>
               <div className="a_ht_singin_modal position-absolute ">
                 <div className="arrow-up arrow-up_sing position-absolute "></div>
                 <div className=" a_singin_modal border-bottom ">
@@ -310,7 +310,7 @@ class Header extends Component {
                         <Link className="nav-link" to="/orderhistory">Your Order</Link>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#">your Wish List</a>
+                        <Link to="/YourWishList" className="nav-link" href="#">your Wish List</Link>
                       </li>
                       <li className="nav-item">
                         <a className="nav-link " href="#" >your Recommendation</a>
@@ -343,7 +343,7 @@ class Header extends Component {
             <button className="me-1 btn  h-100 text-white fs-6 " style={{ 'width': '7%' }}>Return
               <div className="fw-bold">&amp; Order</div>
             </button>
-            <Link  to="/cart" className=" btn   h-100 text-white fw-bold" style={{ 'width': '7%' }}>
+            <Link to="/cart" className=" btn   h-100 text-white fw-bold" style={{ 'width': '7%' }}>
               <span className=" mt-3 d-block float-start home_spritesheet cart_con_pos"></span>
               <span className=" mt-3 float-start">cart</span>
             </Link>

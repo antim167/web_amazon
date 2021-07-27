@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Header from '../component/Header'
 import Footer from '../component/Footer'
-
+import { Link } from 'react-router-dom';
 /**
 * @author
 * @class Delivery
@@ -32,7 +32,7 @@ class Delivery extends Component {
                                 <span className="d-block">NEEMUCH, MADHYA PRADESH 458441</span>
                                 <span className="d-block">India</span>
                                 <a href="#" >Add delivery instructions</a>
-                                <button className="btn amznbtn w-100 btn-sm mt-2 mb-2 ">Deliver to this address</button>
+                                <Link to="/deliveryoption" className="btn amznbtn w-100 btn-sm mt-2 mb-2 ">Deliver to this address</Link>
                                 <div className="row mb-4">
                                     <div className="col p-1"><button className="btn btn-light border btn-sm w-100"> Edit</button></div>
                                     <div className="col p-1"><button className="btn btn-light border btn-sm w-100"> Delete</button></div>

@@ -123,7 +123,7 @@ class Home extends Component {
                                     </div>
                                     {/* End - Only when user is logged in */}
                                         {/* start when user is not lohg in */}
-                                        <div className=" a_mainbox_1_inner h-100 w-100 ">
+                                        <div className="  d-none a_mainbox_1_inner h-100 w-100 ">
                                             <div className="  w-100">
                                                 <h5 className="p-1">Top picks for your home</h5>
                                                 <div className="row m-0">

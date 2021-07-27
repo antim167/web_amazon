@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-
+import { Link } from 'react-router-dom';
 /**
 * @author
 * @class DeliveryOption
@@ -20,9 +20,9 @@ class DeliveryOption extends Component {
                                     <h3>Choose your delivery options</h3>
                                 </div>
                                 <div className="col-3  p-0">
-                                    <button className="btn border  btn-light border w-100">
+                                    <Link to="/paymentmethod" className="btn border  btn-light border w-100">
                                         <button className="btn mt-1 w-100 btn-sm border amznbtn" >Continue</button>
-                                    </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

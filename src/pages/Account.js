@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Layout from '../Layout'
-
+import { Link } from 'react-router-dom';
 /**
 * @author
 * @class Account
@@ -21,7 +21,7 @@ class Account extends Component {
                         <h2 className=" ps-5 mt-2 mb-1">Your Account</h2>
                         <div className="row m-0 ms-3 ">
                             <div className="col-4  p-4">
-                                <a href="#" className="text-decoration-none text-dark">
+                                <Link to="/orderhistory" className="text-decoration-none text-dark">
                                     <div className="row border pt-3 pb-3 m-0">
                                         <div className="col-3  ">
                                             <img className="img-fluid" src="https://images-na.ssl-images-amazon.com/images/G/31/x-locale/cs/ya/images/Box._CB485927553_.png"/>
@@ -31,10 +31,10 @@ class Account extends Component {
                                             <span>Track,return or but thing again</span>
                                         </div>
                                     </div>
-                                </a>
+                                </Link>
                             </div>
                             <div className="col-4  p-4">
-                                <a href="#" className="text-decoration-none text-dark">
+                                <Link to="/signin" className="text-decoration-none text-dark">
                                     <div className="row border pt-3 pb-3 m-0">
                                         <div className="col-3">
                                        <img className="img-fluid"  src="https://images-na.ssl-images-amazon.com/images/G/31/x-locale/cs/ya/images/sign-in-lock._CB485931504_.png"/>
@@ -45,11 +45,11 @@ class Account extends Component {
                                             <span>Edit,login,name,mobile &amp; number</span>
                                         </div>
                                     </div>
-                                </a>
+                                </Link>
                             </div>
 
                             <div className="col-4  p-4">
-                                <a href="#" className="text-decoration-none text-dark">
+                                <Link to="/signin" className="text-decoration-none text-dark">
                                     <div className="row border pt-3 pb-3 m-0">
                                         <div className="col-3">
                                         <img className="img-fluid" src="https://images-na.ssl-images-amazon.com/images/G/31/x-locale/cs/ya/images/rc_prime._CB485926807_.png"/>
@@ -59,7 +59,7 @@ class Account extends Component {
                                             <span>view benifit and payment setting</span>
                                         </div>
                                     </div>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         <div className="row m-0 ms-3 mt-3 ">
@@ -77,7 +77,7 @@ class Account extends Component {
                                 </a>
                             </div>
                             <div className="col-4 p-4 ">
-                                <a href="#" className="text-decoration-none text-dark">
+                                <Link to="/paymentmethod" className="text-decoration-none text-dark">
                                     <div className="row border pt-4 pb-4 m-0">
                                         <div className="col-3 p-0">
                                         <img className="img-fluid" src="https://images-na.ssl-images-amazon.com/images/G/31/x-locale/cs/ya/images/Payments._CB485926359_.png"/>
@@ -88,7 +88,7 @@ class Account extends Component {
                                             <span>Edit or add Payment method</span>
                                         </div>
                                     </div>
-                                </a>
+                                </Link>
                             </div>
 
                             <div className="col-4 p-4">
